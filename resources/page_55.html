@@ -1,0 +1,868 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>the morning paper | an interesting/influential/important paper from the world of CS every weekday morning, as selected by Adrian Colyer | Page 55</title>
+<!--[if lt IE 8]><link rel="stylesheet" type="text/css" media="screen" href="https://s0.wp.com/wp-content/themes/pub/vigilance/stylesheets/ie.css" /><![endif]-->
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" media="screen" href="https://s0.wp.com/wp-content/themes/pub/vigilance/stylesheets/ie6.css" /><![endif]-->
+<link rel="pingback" href="https://blog.acolyer.org/xmlrpc.php" />
+		<script src='https://r-login.wordpress.com/remote-login.php?action=js&amp;host=blog.acolyer.org&amp;id=23592848&amp;t=1496056112&amp;back=https%3A%2F%2Fblog.acolyer.org%2Fpage%2F55%2F' type="text/javascript"></script>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+			if ( 'function' === typeof WPRemoteLogin ) {
+				document.cookie = "wordpress_test_cookie=test; path=/";
+				if ( document.cookie.match( /(;|^)\s*wordpress_test_cookie\=/ ) ) {
+					WPRemoteLogin();
+				}
+			}
+		/* ]]> */
+		</script>
+		<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//adriancolyer.wordpress.com' />
+<link rel='dns-prefetch' href='//s1.wp.com' />
+<link rel="alternate" type="application/rss+xml" title="the morning paper &raquo; Feed" href="https://blog.acolyer.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="the morning paper &raquo; Comments Feed" href="https://blog.acolyer.org/comments/feed/" />
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+			<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s1.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1488818651h&ver=4.7.5"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='all-css-0-1' href='https://s0.wp.com/_static/??-eJyNkOFuwjAMhF9oWVSYNvUH4lnSYIIhjq3aperbLx0aYhuK9ie6i+6zc/GzuMjFoJinyUmeEhb1s0Qmp4QZll/uNaq++OdYxguoP4NJiBf35VpxLEcsaMtd/CtsJ6C6RabBXzFhDiVCC4w8Qr0nCbYmCA4YINcZxVoYyfs3tcpTbdQsc/ukYZARVF09CSdyt8f+4Z518GpLbjaZ8ZDA1BuLE9aqHhD0hQ0rpXfRmpWAXeYYDLn8MO6YA44tdIQhc6oy+Zp6sCu0p1331nf9dvPR9edPNx/k1w==' type='text/css' media='all' />
+<link rel='stylesheet' id='print-css-1-1' href='https://s0.wp.com/wp-content/mu-plugins/global-print/global-print.css?m=1465851035h' type='text/css' media='print' />
+<link rel='stylesheet' id='all-css-2-1' href='https://s2.wp.com/_static/??/wp-content/mu-plugins/actionbar/actionbar.css,/wp-content/themes/h4/global.css?m=1490786585j' type='text/css' media='all' />
+<script type='text/javascript' src='https://s1.wp.com/_static/??-eJyF0G0KwjAMBuAL2dXJxP0Rz1Lr60hdP2zaDT29FSYiVIVAIHkISeQcBDk95hNYmhLXjHhbUmN4JX8BYWmIKqGx5F5Ye5fg0tNaf6QRIjOiGkqtDDr7iguekwVzQZXu50rkJsL8lxmkoPRFRDDdUTuEw3vn7x9Y1MHu267fbfp2263NA675cvs='></script>
+<link rel='stylesheet' id='all-css-0-2' href='https://s1.wp.com/wp-content/mu-plugins/highlander-comments/style.css?m=1377793621h' type='text/css' media='all' />
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='https://s1.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563h&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://adriancolyer.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress.com" />
+<link rel='shortlink' href='http://wp.me/1AZzO' />
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="the morning paper" />
+<meta property="og:description" content="an interesting/influential/important paper from the world of CS every weekday morning, as selected by Adrian Colyer" />
+<meta property="og:url" content="https://blog.acolyer.org/" />
+<meta property="og:site_name" content="the morning paper" />
+<meta property="og:image" content="https://secure.gravatar.com/blavatar/09326a066a08237015d6b84f026d36ae?s=200&amp;ts=1496056112" />
+<meta property="og:image:width" content="200" />
+<meta property="og:image:height" content="200" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:site" content="@wordpressdotcom" />
+<link rel="shortcut icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/09326a066a08237015d6b84f026d36ae?s=32" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/09326a066a08237015d6b84f026d36ae?s=32" sizes="16x16" />
+<link rel="apple-touch-icon-precomposed" href="https://secure.gravatar.com/blavatar/09326a066a08237015d6b84f026d36ae?s=114" />
+<link rel='openid.server' href='https://adriancolyer.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='https://adriancolyer.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="https://blog.acolyer.org/osd.xml" title="the morning paper" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+		<style id="wpcom-hotfix-masterbar-style">
+			@media screen and (min-width: 783px) {
+				#wpadminbar .quicklinks li#wp-admin-bar-my-account.with-avatar > a img {
+					margin-top: 5px;
+				}
+			}
+		</style>
+
+	<meta name="application-name" content="the morning paper" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="an interesting/influential/important paper from the world of CS every weekday morning, as selected by Adrian Colyer" /><meta name="msapplication-task" content="name=Subscribe;action-uri=https://blog.acolyer.org/feed/;icon-uri=https://secure.gravatar.com/blavatar/09326a066a08237015d6b84f026d36ae?s=16" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="title" content="the morning paper on WordPress.com" />
+<meta name="description" content="an interesting/influential/important paper from the world of CS every weekday morning, as selected by Adrian Colyer" />
+	<style type="text/css">
+				#title a { color: #444444 }
+		</style>
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+<style type="text/css" id="custom-colors-css">.comments a{background-image:none;padding-left:0}body{color:#333}.categories a:link,.categories a:visited{color:#333}#nav li a{color:#333}#footer{color:#333}#description h2{color:#333}.post .date,.comments,.meta,.categories{color:#333}.meta a:link,.meta a:visited{color:#333}#footer a:link,#footer a:visited{color:#333}.sticky .entry{background-color:#eee}.sticky .entry{background-color:rgba(238,238,238,.1)}#footer{border-color:#6d6d6d}body{background-color:#fff}.post-header,.post-footer{border-color:#fff}#header{border-color:#b7b7b7}a:hover{color:#772124}#header #title a:hover{color:#772124}#nav ul li a:hover,#nav ul li:hover>a,#nav ul li.current_page_item>a,#nav ul li.current_page_parent>a,#nav ul li.current_page_ancestor>a,#nav ul li.current-cat>a,#nav ul li.current-menu-ancestor>a,#nav ul li.current-menu-item>a,#nav ul li.current-menu-parent a{color:#772124}#nav ul li a:hover,#nav ul li:hover>a,#nav ul li.current_page_item>a,#nav ul li.current_page_parent>a,#nav ul li.current_page_ancestor>a,#nav ul li.current-cat>a,#nav ul li.current-menu-ancestor>a,#nav ul li.current-menu-item>a,#nav ul li.current-menu-parent a{border-top-color:#772124}.post-header h1 a:hover,.post-header h2 a:hover{color:#772124}.meta a:hover{color:#772124}.comments a:hover{color:#772124}.categories a:hover{color:#772124}span.asterisk{color:#772124}#footer a:hover{color:#772124}a:link,a:visited{color:#772124}.post-header h1 a:link,.post-header h1 a:visited,.post-header h2 a:link,.post-header h2 a:visited{color:#772124}#title a{color:#772124}</style>
+		<link rel="stylesheet" id="custom-css-css" type="text/css" href="https://s2.wp.com/?custom-css=1&#038;csblog=1AZzO&#038;cscache=6&#038;csrev=6" />
+		</head>
+<body class="home blog paged paged-55 mp6 customizer-styles-applied vigilance-light highlander-enabled highlander-light custom-colors infinite-scroll neverending">
+	<div class="skip-content"><a href="#content">Skip to content</a></div>
+	<div id="wrapper">
+				<div id="header" class="clear">
+			<h1 id="title"><a href="https://blog.acolyer.org"><span>the morning paper</span></a></h1>			<div id="description">
+				<h2>an interesting/influential/important paper from the world of CS every weekday morning, as selected by Adrian Colyer</h2>
+			</div><!--end description-->
+			<div id="nav">
+					<ul class="menu">
+		<li class="page_item current_page_item"><a href="https://blog.acolyer.org">Home</a></li>
+				<li class="page_item page-item-2"><a href="https://blog.acolyer.org/about/">About</a></li>
+<li class="page_item page-item-406"><a href="https://blog.acolyer.org/email-subs/">Subscribe</a></li>
+	</ul>
+			</div><!--end nav-->
+		</div><!--end header-->
+		<div id="content" class="pad">
+
+<div id="post-1163" class="post-1163 post type-post status-publish format-standard hentry category-security">
+	<div class="post-header">
+		<h2><a href="https://blog.acolyer.org/2015/09/18/buffer-overflows-attacks-and-defenses-for-the-vulnerability-of-the-decade/" rel="bookmark">Buffer Overflows: Attacks and Defenses for the Vulnerability of the&nbsp;Decade</a></h2>
+		<div class="date">September 18, 2015</div>
+	</div><!--end post header-->
+	<div class="meta clear">
+		<div class="tags"></div>
+		<div class="author">
+					</div>
+	</div><!--end meta-->
+	<div class="entry clear">
+				<p><a href="https://users.ece.cmu.edu/~adrian/630-f04/readings/cowan-vulnerability.pdf">Buffer Overflows: Attacks and Defenses for the Vulnerabilty of the Decade</a> &#8211; Cowan et al. 2000</p>
+<p>Some of you may recall reading &#8220;<a href="https://www.eecs.umich.edu/courses/eecs588/static/stack_smashing.pdf">Smashing the Stack for Fun and Profit</a>&#8221; (hard to believe that was published in 1996!), which helped to raise consciousness of buffer overflow attacks.  In this paper from 2000 Cowan et al. provide a very readable breakdown of how they work and the potential defenses against them.</p>
+<blockquote><p>
+  Buffer overflows have been the most common form of security vulnerability in the last ten years (1990-2000). More over, buffer overflow vulnerabilities dominate in the area of remote network penetration vulnerabilities, where an anonymous Internet user seeks to gain partial or total control of a host. Because these kinds of attacks enable anyone to take total control of a host, they represent one of the most serious classes security threats.
+</p></blockquote>
+<p>A buffer overflow attack enables the attacker to inject and execute attack code, which runs with the privileges of the vulnerable program (which is why you should always run processes with the least privileges possible).</p>
+<h3>Crafting a Buffer Overflow Attack</h3>
+<p>Typically an attacker is attacking a <code>root</code> program, and immediately executes  code similar to <code>exec(sh)</code> &#8211; but not always. To achieve their goal, an attacker has to accomplish two objectives:</p>
+<ol>
+<li>Arrange for suitable code to be available in the program&#8217;s address space.</li>
+<li>Get the program to jump to that code, with suitable parameters loaded into registers and memory</li>
+</ol>
+<h4>Arranging for suitable attack code to be available</h4>
+<p>Again, there are two ways to get suitable code into a program&#8217;s address space: either inject it, or simply use whatever is already there.</p>
+<p>When injecting code:</p>
+<blockquote><p>
+  The attacker provides a string as input to the program, which the program stores in a buffer. The string contains bytes that are actually native CPU instructions for the platform being attacked. Here the attacker is (ab)using the victim program’s buffers to store the attack code.
+</p></blockquote>
+<p>Note that you don&#8217;t need to overflow any buffers to do this, sufficient payload can be injected into perfectly reasonable buffers.  The buffer itself can be anywhere &#8211; on the stack, the heap, or in the static data area.</p>
+<p>If you want a shell, there&#8217;s really no need to worry about injecting code though. Since nearly all C programs link with <code>libc</code> the code you need is already present.</p>
+<blockquote><p>
+  Often, the code to do what the attacker wants is already present in the program’s address space. The attacker need only parameterize the code, and then cause the program to jump to it. For instance, if the attack code needs to execute “exec(“/bin/sh”)”, and there exists code in libc that executes “exec(arg)” where “arg” is a string pointer argument, then the attacker need only change a pointer to point to “/bin/sh” and jump to the appropriate instructions in the libc library
+</p></blockquote>
+<h4>Jumping to the attack code</h4>
+<blockquote><p>
+  The basic method is to overflow a buffer that has weak or non-existent bounds checking on its input with a goal of corrupting the state of an adjacent part of the program’s state, e.g. adjacent pointers, etc. By overflowing the buffer, the attacker can overwrite the adjacent program state with a near-arbitrary sequence of bytes, resulting in an arbitrary bypass of C’s type system and the victim program’s logic.
+</p></blockquote>
+<p>Most attacks seen in the wild attack <em>code pointers</em>. The distinguishing factors among overflow attacks are the kind of state corrupted, and where in the memory layout the state is located. Activation Records, Function Pointers, and Longjmp buffers are all vulnerable.</p>
+<blockquote><p>
+  Each time a function is called, it lays down an activation record on the stack that includes, among other things, the return address that the program should jump to when the function exits, i.e. point at the code injected. Attacks that corrupt activation record return addresses overflow automatic variables, i.e. buffers local to the function. By corrupting the return address in the activation record, the attacker causes the program to jump to attack code when the victim function returns and dereferences the return address. This form of buffer overflow is called a “stack smashing attack” and constitutes a majority of current buffer overflow attacks.
+</p></blockquote>
+<p>If an overflowable buffer is adjacent to a function pointer, then the pointer can be overwritten and the next time the program calls the function it will jump to the attack code. Likewise a setjmp/longjmp buffer adjacent to an overflowable buffer can also be overwritten, changing the destination the program jumps to.</p>
+<h4>Combinations</h4>
+<blockquote><p>
+  The simplest and most common form of buffer overflow attack combines an injection technique with an activation record corruption in a single string. The attacker locates an overflowable automatic variable, feeds the program a large string that simultaneously overflows the buffer to change the activation record, and contains the injected attack code. This is the template for an attack outlined by Levy. Because the C idiom of allocating a small local buffer to get user or parameter input is so common, there are a lot of instances of code vulnerable to this form of attack. The injection and the corruption do not have to happen in one action. The attacker can inject code into one buffer without overflowing it, and overflow a different buffer to corrupt a code pointer.  This is typically done if the overflowable buffer does have bounds checking on it, but gets it wrong, so the buffer is only overflow-able up to a certain number of bytes. The attacker does not have room to place code in the vulnerable buffer, so the code is simply inserted into a different buffer of sufficient size.
+</p></blockquote>
+<h3>Defending Against Buffer Overflows</h3>
+<p>There are four basic mechanisms of defense against buffer overflow attacks: writing correct programs; enlisting the help of the operating system to make storage areas for buffers non-executable; enhanced compilers that perform bounds checking; and performing integrity checks on code pointers before dereferencing them.</p>
+<p>&#8220;Writing correct code is a laudable but highly expensive proposition:&#8221;</p>
+<blockquote><p>
+  Despite a long history of understanding of how to write secure programs vulnerable programs continue to emerge on a regular basis&#8230;  Even defensive code that uses safer alternatives such as strncpy and snprintf can contain buffer overflow vulnerabilities if the code contains an elementary off-by-one error. For instance, the lprm program was found to have a buffer overflow vulnerability, despite having been audited for security problems such as buffer overflow vulnerabilities.
+</p></blockquote>
+<p>The operating system approach is to make data areas for buffers non-executable. Many older computer systems were designed this way, but in the name of performance, &#8220;more recent UNIX and MS Windows<br />
+systems have come to depend on the ability to emit dynamic code into program data segments to support<br />
+various performance optimizations.&#8221;  However, you <em>can</em> make the stack segment non-executable.  This protection is highly effective against attacks that depend on injecting code into automatic variables, but offers no protection against other forms of attack.</p>
+<blockquote><p>
+  While injecting code is optional for a buffer overflow attack, the corruption of control flow is essential. Thus unlike non-executable buffers, array bounds checking completely stops buffer overflow vulnerabilities and attacks. If arrays cannot be overflowed at all, then array overflows cannot be used to corrupt adjacent program state.
+</p></blockquote>
+<p>With array bounds checking, you need to check all reads and writes to ensure that they are within range.  As of 2000, the best approaches either had severe limitations in what they could actually check for, or severe performance penalties.  Of course, another approach is simply to use a type-safe language in the first place!</p>
+<blockquote><p>
+  All buffer overflow vulnerabilities result from the lack of type safety in C. If only type-safe operations can be performed on a given variable, then it is not possible to use creative input applied to variable foo to make arbitrary changes to the variable bar. If new, security-sensitive code is to be written, it is recommended that the code be written in a type-safe language such as Java or ML. Unfortunately, there are millions of lines of code invested in existing operating systems and security-sensitive applications, and the vast majority of that code is written in C. This paper is primarily concerned with methods to protect existing code from buffer overflow attacks. However, it is also the case that the Java Virtual Machine (JVM) is a C program, and one of the ways to attack a JVM is to apply buffer overflow attacks to the JVM itself. Because of this, applying buffer overflow defensive techniques to the systems that enforce type safety for type-safe languages may yield beneficial results.
+</p></blockquote>
+<p><em>Code pointer integrity checking</em> seeks to detect that a code pointer has been corrupted before it is dereferenced (and thus prevent the pointer from being used).</p>
+<blockquote><p>
+  Code pointer integrity checking has the disadvantage relative to bounds checking that it does not perfectly solve the buffer overflow problem; overflows that affect program state components other than code pointers will still succeed. However, it has substantial advantages in terms of performance, compatibility with existing code, and implementation effort.
+</p></blockquote>
+<p>The authors&#8217; StackGuard project implements this approach. It works by placing a &#8216;canary&#8217; word next to the return address on the stack.</p>
+<blockquote><p>
+  The enhanced function tear down code first checks to see that the canary word is intact before jumping to the address pointed to by the return address word. Thus if an attacker attempts a “stack smashing,&#8221;  the attack will be detected before the program ever attempts to dereference the corrupted activation record.
+</p></blockquote>
+<p>To ensure that an attacker cannot forge a canary you can ensure that the canary is comprised of common termination symbols for C strings which thwarts string-based attacks. You can also use a random canary (just a 32 bit number) chosen when the program starts.  StackGuard was shown to provide effective protection against stack-smashing attacks while still preserving virtually all of the system performance and compatibility.</p>
+<blockquote><p>
+  At the time StackGuard was built, the “stack smashing” variety formed a gross preponderance of buffer overflow attacks. It is conjectured that this resulted from some “cook book” templates for stack smashing attacks released in late 1996. Since that time, most of the “easy” stack smashing vulnerabilities have been exploited or otherwise discovered and patched, and the attackers have moved on to explore the more general form of buffer overflow attacks. PointGuard is a generalization of the StackGuard approach designed to deal with this phenomena&#8230;
+</p></blockquote>
+<p>PointGuard places canaries next to <em>all</em> code pointers (function pointers and longjmp buffers). Both allocating and checking the canary are difficult problems though.</p>
+<h3>What Happened Next?</h3>
+<p>There is a good summary in the <a href="https://en.m.wikipedia.org/wiki/Buffer_overflow_protection">Wikipedia article on Buffer Overflow Protection</a>:</p>
+<ul>
+<li>StackGuard was suggested for inclusion in GCC 3.x in 2003, but this never happened</li>
+<li>IBM developed ProPolice which improved on StackGuard by placing buffers <em>after</em> local pointers and function arguments in the stack frame.</li>
+<li>In 2005 RedHat identified problems with ProPolice and re-implemented stack-smashing protection for GCC 4.1 introducing the -fstack-protector and -fstack-protector-all flags</li>
+<li>In 2012, Google added -fstack-protector-strong striking a better balance between performance and security. It has been in GCC since version 4.9.</li>
+</ul>
+					</div><!--end entry-->
+	<div class="post-footer">
+		<div class="comments"><a href="https://blog.acolyer.org/2015/09/18/buffer-overflows-attacks-and-defenses-for-the-vulnerability-of-the-decade/#comments">1 Comment</a></div>
+		<div class="categories">from &rarr; <a href="https://blog.acolyer.org/category/security/" rel="category tag">Security</a></div>
+	</div><!--end post footer-->
+</div><!--end post-->
+<div id="post-1159" class="post-1159 post type-post status-publish format-standard hentry category-security">
+	<div class="post-header">
+		<h2><a href="https://blog.acolyer.org/2015/09/17/lessons-learned-in-implementing-and-deploying-crypto-software/" rel="bookmark">Lessons Learned in Implementing and Deploying Crypto&nbsp;Software</a></h2>
+		<div class="date">September 17, 2015</div>
+	</div><!--end post header-->
+	<div class="meta clear">
+		<div class="tags"></div>
+		<div class="author">
+					</div>
+	</div><!--end meta-->
+	<div class="entry clear">
+				<p><a href="https://www.usenix.org/legacy/event/sec02/full_papers/gutmann/gutmann.pdf">Lessons Learned in Implementing and Deploying Crypto Software</a> &#8211; Gutmann 2002</p>
+<p>The author of today&#8217;s paper, Peter Gutmann, is the developer of <a href="http://www.cryptlib.com">CryptLib</a>, which gives him a unique perspective both in the development of crypto, and also in how people use it (from supporting the crypolib user base). The paper was written in 2002, so details specific to particular libraries and versions will have changed in the intervening 13 years, but the bigger lessons remain relevant.</p>
+<blockquote><p>
+  &#8230;the basic tools for strong encryption have become fairly widespread, gradually displacing the snake oil products which they had shared the environment with until then.  As a result, it&#8217;s now fairly easy to obtain software which contains well-established, strong algorithms such as triple DES and RSA instead of pseudo one-time-pads.
+</p></blockquote>
+<p>Unfortunately, it&#8217;s still easy to produce insecure systems using these building blocks:</p>
+<blockquote><p>
+  A proprietary, patent-pending, military-strength, million-bit-key, one-time pad built from encrypted prime cycle wheels is a sure warning sign to stay well clear, but a file encryptor which uses Blowfish with a 128-bit key seems perfectly safe until further analysis reveals that the key is obtained from an MD5 hash of an uppercase-only 8-character ASCII password.
+</p></blockquote>
+<p>Gutmann terms such systems &#8216;2nd generation snake oil,&#8217; and because it looks like the real thing but isn&#8217;t, also uses the phrase &#8216;naugahyde crypto.&#8217; I had no idea what naugahyde is/was, but it turns out it&#8217;s a form of imitation leather.</p>
+<blockquote><p>
+  Most crypto software is written with the assumption that the user knows what they&#8217;re doing, and will choose the most appropriate algorithm and mode of operation, carefully manage key generation and secure key storage, employ the crypto in a suitably safe manner, and do a great many other things which require fairly detailed crypto knowledge.  However, since most implementers are everyday programmers whose motivation for working with crypto is defined by &#8216;the boss said do it&#8217;, the inevitable result is the creation of products with genuine naugahyde crypto.
+</p></blockquote>
+<p>The main body of the paper is a catalogue of the ways in which the author had seen crypto misused. I&#8217;ve included some highlights below.</p>
+<h3>&#8216;Private&#8217; keys</h3>
+<blockquote><p>
+  One of the principal design features of cryptlib is that it never exposes private keys to outside access.  The single most frequently-asked cryptlib question is therefore &#8216;How do I export private keys in plaintext form?&#8217; &#8230;. The amount of sharing of private keys across applications and machines is truly frightening.  Mostly this appears to occur because users don&#8217;t understand the value of the private key data, treating it as just another piece of information which can be copied across to wherever it&#8217;s convenient.
+</p></blockquote>
+<p>Once keys are this widespread, keeping them secure is virtually impossible. Thus Gutmann offers this advice:</p>
+<blockquote><p>
+  If your product allows the export of private keys in plaintext form or some other widely-readable format, you should assume that your keys will end up in every other application on the system, and occasionally spread across other systems as well.
+</p></blockquote>
+<p>Accidental transmission of private keys is another common mistake &#8211; not helped by the fact that PKCS #12 bundles private keys with certificates. This leads to users sending their private key when they only meant to send their certificate&#8230;</p>
+<blockquote><p>
+  &#8220;I&#8217;m sending you a my certificate&#8221; is frequently accompanied by a PKCS #12 file.&#8221;  &#8230;. The author, being a known open-source crypto developer, is occasionally asked for help with certificate-management code, and has over the years accumulated a small collection of users&#8217; private keys and certificates, ranging from disposable email certificates through to relatively expensive higher-assurance certificates (the users were notified and the keys deleted where requested).
+</p></blockquote>
+<p>Key management practices can also undermine use of public key cryptography:</p>
+<blockquote><p>
+  Even when public-key encryption is being used, users often design their own key-management schemes to go with it.  One (geographically distributed) organisation solved the key management problem by using the same private key on all of their systems.  This allowed them to deploy public-key encryption throughout the organisation while at the same time eliminating any key management problems, since it was no longer necessary to track a confusing collection of individual keys.
+</p></blockquote>
+<p>Guttman&#8217;s advice: &#8220;Straight Diffie-Hellman requires no key management.  This is always better than other no-key-management alternatives which users will create.&#8221;</p>
+<h3>Entropy again&#8230;</h3>
+<blockquote><p>
+  Crypto toolkits sometimes leave problems which the toolkit developers couldn&#8217;t solve themselves as an exercise for the user.  For example the gathering of entropy data for key generation is often expected to be performed by user-supplied code outside the toolkit. Experience with users has shown that they will typically go to any lengths to avoid having to provide useful entropy to a random number generator which relies on this type of user seeding.  The first widely-known case where this occurred was with the Netscape generator, whose functioning with inadequate input required the disabling of safety checks which were designed to prevent this problem from occurring.
+</p></blockquote>
+<p>Particularly illuminating is the flood of &#8216;helpful&#8217; posts on forums showing how to circumvent the problem of not having enough entropy once OpenSSL 0.9.5 started requiring it.</p>
+<blockquote><p>
+  It is likely that considerably more effort and ingenuity has been expended towards seeding the generator incorrectly than ever went into doing it right&#8230;. The practical experience provided by cases such as the ones given above shows how dangerous it is to rely on users to correctly initialise a<br />
+  generator &#8211; not only will they not perform it correctly, they&#8217;ll go out of their way to do it wrong.
+</p></blockquote>
+<h3>Do you know what you&#8217;re doing?</h3>
+<blockquote><p>
+  The functionality provided by crypto libraries constitute a powerful tool.  However, like other tools, the potential for misuse in inexperienced hands is always present. Crypto protocol design is a subtle art, and most users who cobble their own implementations together from a collection of RSA and 3DES code will get it wrong.  In this case &#8216;wrong&#8217; doesn&#8217;t refer to (for example) missing a subtle flaw in Needham-Schroeder key exchange, but to errors such as using ECB mode (which doesn&#8217;t hide plaintext data patterns) instead of CBC (which does).
+</p></blockquote>
+<p>A cautionary tale is given of a vendor that implemented their VPN using triple DES in ECB mode.  &#8220;Since ECB mode can only encrypt data in multiples of the cipher block size, they didn&#8217;t encrypt any leftover bytes at the end of the packet.  The interaction of this processing mechanism with interactive user logins, which frequently transmit the user name and password one character at a time, can be imagined by the reader.&#8221;</p>
+<p>Cryptographic library functions should be provide at the highest level of abstraction possible to reduce the risk of &#8216;users who know just enough to be dangerous&#8230;&#8217;</p>
+<blockquote><p>
+  The issue which needs to be addressed here is that the average user hasn&#8217;t read any crypto books, or has at best had some brief exposure to portions of a popular text such as Applied Cryptography, and simply isn&#8217;t able to operate complex (and potentially dangerous) crypto machinery without any real training.  The solution to this problem is for developers of libraries to provide crypto functionality at the highest level possible, and to discourage the use of low-level routines by inexperienced users.  The job of the crypto library should be to protect users from injuring themselves (and others) through the misuse of basic crypto routines.
+</p></blockquote>
+					</div><!--end entry-->
+	<div class="post-footer">
+		<div class="comments"><a href="https://blog.acolyer.org/2015/09/17/lessons-learned-in-implementing-and-deploying-crypto-software/#respond">Leave a comment</a></div>
+		<div class="categories">from &rarr; <a href="https://blog.acolyer.org/category/security/" rel="category tag">Security</a></div>
+	</div><!--end post footer-->
+</div><!--end post-->
+<div id="post-1157" class="post-1157 post type-post status-publish format-standard hentry category-security">
+	<div class="post-header">
+		<h2><a href="https://blog.acolyer.org/2015/09/16/mining-your-ps-and-qs-detection-of-widespread-weak-keys-in-network-devices/" rel="bookmark">Mining your Ps and Qs: Detection of Widespread Weak Keys in Network&nbsp;Devices</a></h2>
+		<div class="date">September 16, 2015</div>
+	</div><!--end post header-->
+	<div class="meta clear">
+		<div class="tags"></div>
+		<div class="author">
+					</div>
+	</div><!--end meta-->
+	<div class="entry clear">
+				<p><a href="https://factorable.net/paper.html">Mining your Ps and Qs: Detection of Widespread Weak Keys in Network Devices</a> &#8211; Heninger et al. 2012</p>
+<p>This paper definitely wins the &#8216;best pun in a paper title&#8217; prize. P and Q here refer to the factors that are multiplied together when generating your public and private key pairs. As for the mining? It turns out that if you collect (mine) public keys available on the internet, and look for certain similarities among them, you can work out what P &amp; Q are for the similar pairs, and thus compute the corresponding <em>private</em> keys. Yikes! This applies to RSA keys, a similar weakness exists in DSA keys.</p>
+<blockquote><p>
+  The weak key vulnerabilities we describe in this paper can be exploited to compromise two of the most important cryptographic transport protocols used on the Internet, TLS and SSH, both of which commonly use RSA or DSA to authenticate servers to clients.
+</p></blockquote>
+<p>Written in 2012, the paper contains an important lesson for headless and embedded devices (here&#8217;s looking at you, IoT) which are at risk of using keys that were generated with insufficient entropy. It wouldn&#8217;t surprise me if there were plenty of devices still out there today that are vulnerable to this attack.</p>
+<p>An RSA public key consists of two integers, an exponent <em>e</em>, and a modulus <em>N</em>, where <em>N</em> is the product of two randomly chosen prime numbers <em>p</em> and <em>q</em>.  If you know what <em>p</em> and <em>q</em> are, it&#8217;s easly to derive the associated private key, <em>d</em>:</p>
+<p>d = e<sup>-1</sup> mod (p-1)(q-1)</p>
+<blockquote><p>
+  Fortunately, no-one has been publicly known to factor a well-generated 1024-bit RSA modulus&#8230;.
+</p></blockquote>
+<p>A much easier problem though, is to calculate the greatest common divisor (GCD) of two 1024-bit integers. That takes microseconds. Suppose we have two keys with moduli <em>N<sub>1</sub> = p<sub>1</sub>q<sub>1</sub></em> and <em>N<sub>2</sub> = p<sub>2</sub>q<sub>2</sub></em>.  If they have a prime GCD in common, then p<sub>1</sub> = p<sub>2</sub> (remember, we can test this in microseconds). Given <em>p</em>, we can easily calculate q<sub>1</sub> and q<sub>2</sub> and hence obtain the private keys.</p>
+<p>Suppose for a  moment we had lots of public keys. We could consider each possible pair drawn from this set and look for common prime GCDs. When we get a match, we can crack the corresponding private keys.  There are just two problems we have left to solve: (a) where to get lots of public keys, and (b) how to calculate all of the pairwise GCDs efficiently.</p>
+<p>Where do we get lots of public keys? The internet of course! The authors scanned all IPv4 addresses looking for open HTTPS (port 443) and SSH (port 22) ports. They then opened a connection and performed a TLS or SSH handshake, and stored the presented certificate chain (containing the public key) or host key in a database. The first phase &#8211; finding hosts with port 443 or 22 open,  took 25 hours using 25 AWS micro instances (available on the free tier!). Collecting keys from these hosts used a single AWS EC2 Large Instance, and took about 3 hours &#8211; not free, sorry.  That will cost you about $0.30 &#8211; $0.40 at today&#8217;s prices!</p>
+<p>So we have ourselves a large database of public keys in less than 1.5 days for a total cost of &lt; $1. As of 2012, that represented about 12M keys for TLS hosts, and 10M keys for SSH hosts.</p>
+<blockquote><p>
+  We now describe how we efficiently computed the pairwise GCD of all distinct RSA moduli in our multimillion-key dataset. This allowed us to calculate RSA private keys for 66,540 vulnerable hosts that shared one of their RSA prime factors with another host in our survey&#8230;. The naïve way to compute the GCDs of every pair of integers in a large set would be to apply a GCD algorithm to each pair individually. There are 6×10<sup>13</sup> distinct pairs of RSA moduli in our data; at 15µs per pair, this calculation would take 30 years. We can do much better by using a more efficient algorithm. To accomplish this, we implemented a quasilinear-time algorithm for factoring a collection of integers into co-primes, due to Bernstein.
+</p></blockquote>
+<p>Following 5.5 hours of initial processing on a 3.30 Ghz Intel Core i5 processor and 32G RAM, the completion of this stage used sixteen cores on an EC2 Extra Large Instance for 1.3 hours. Total cost about $5.</p>
+<p>All in, that&#8217;s 66,540 private keys cracked in less than 1.5 days and less than $10.</p>
+<p>A related finding from the key database was the surprising number of hosts that share public keys.</p>
+<blockquote><p>
+  We found that 7,770,232 of the TLS hosts (61%) and 6,642,222 of the SSH hosts (65%) served the same key as another host in our scans. To understand why, we clustered certificates and host keys that shared the same public key and manually inspected representatives of the largest clusters. In all but a few cases, the TLS certificate subjects, SSH version strings, or WHOIS information were identical within a cluster, or pointed to a single manufacturer or organization.
+</p></blockquote>
+<p>Many of these were due to shared hosting, or distinct TLS certificates all belonging to the same organisation. However, there were also many hosts using manufacturer default keys (a bad idea!):</p>
+<blockquote><p>
+  These are preconfigured in the firmware of many devices, such that every device of a given model shares the same key pair unless the user changes it. The private keys to these devices may be accessible through reverse engineering, and published databases of default keys such as littleblackbox contain private keys for thousands of firmware releases. At least 670,391 (5.23%) of the TLS hosts appeared to serve manufacturer-default certificates or keys. We classified a certificate as a manufacturer default if nearly all the devices of a given model used identical certificates, or if the certificate was labeled as a default certificate.
+</p></blockquote>
+<p>A final reason why hosts share the same key is caused by low entropy during key generation:</p>
+<blockquote><p>
+  In these instances, when we investigated a key cluster, we would typically see thousands of hosts across many address ranges, and, when we checked the keys corresponding to other instances of the same model of device, we would see a long-tailed distribution in their frequencies. Intuitively, this type of distribution suggests that the key generation process may be using insufficient entropy, with distinct keys due to relatively rare events.
+</p></blockquote>
+<p>Devices from 41 manufactures accounted for 99% of the hosts that generated factorable keys:</p>
+<blockquote><p>
+  The 11,170,883 distinct RSA moduli yielded 2,314 distinct prime divisors, which divided 16,717 distinct public keys. This allowed us to obtain private keys for 23,576 (0.40%) of the TLS certificates in our scan data, which were served on 64,081 (0.50%) of the TLS hosts, and 1,013 (0.02%) of the RSA SSH host keys, which were served on 2,459 (0.027%) of the RSA SSH hosts. The vast majority of the vulnerable keys appeared to be system-generated certificates and SSH host keys used by routers, firewalls, remote administration cards, and other types of headless or embedded network devices.
+</p></blockquote>
+<p>For DSA signatures, another 26,374 vulnerable hosts were found. (See the full paper for details of the DSA weakness, which is similar in spirit to the RSA one).</p>
+<p>The cause for many of the entropy problems was tracked back to insufficient randomness provided by the operating system.</p>
+<blockquote><p>
+  We experimented with the Linux 2.6.35 kernel to exhaustively determine the sources of entropy used by the RNG. To do this, we traced through the kernel source code and systematically disabled entropy sources until the RNG output was repeatable. All of the entropy sources we found are greatly weakened under certain operating conditions&#8230;. The removal of IRQs as an entropy source has likely<br />
+  exacerbated RNG problems in headless and embedded devices, which often lack human input devices, disks, and multiple cores. If they do, the only source of entropy—if there are any at all—may be the time of boot.
+</p></blockquote>
+<p>The authors disabled some sources of entropy in a server to simulate a headless device under cold boot without a working clock. 1000 unattended boots were performed, and 32  bytes read from urandom at the point where ssh normally starts. The output of /dev/urandom was entirely predictable and repeatable.</p>
+<blockquote><p>
+  The entropy sources we disabled would likely be missing in some headless and embedded systems, particularly on first boot. This means that there is a window of vulnerability—a boot-time entropy hole—during which Linux’s urandom may be entirely predictable, at least for single-core systems.
+</p></blockquote>
+<p>The team also observed many keys that shared the same first prime factor, <em>p</em>, but different <em>qs</em>:</p>
+<blockquote><p>
+  Since we observed many keys with one prime factor in common, we can conjecture that multiple systems are starting with urandom and the time in the same state and that the entropy pool states<br />
+  diverge due to the addition of time during intermediate steps of the key generation process.
+</p></blockquote>
+<p>In particular, the first prime <em>p</em> is computed before the clock ticks, if the clock ticks and  moves on to the next second before <em>q</em> is computed, then the OpenSSL bnrand() function, which mixes in the current time in seconds, will return different values.</p>
+<p>Section 7 of the paper contains a useful set of lessons for the various stakeholders in this process:</p>
+<ul>
+<li>OS developers should provide a PRNG interface that blocks until it has been seeded with a minimum amount of true randomness, and that is continually seeded with fresh entropy collected during operation.  An interface should be provided to query the amount of entropy, and the RNG should be thoroughly tested on diverse platforms.</li>
+<li>Library developers should default to the most secure configuration  e.g. /dev/random vs /dev/urandom.  (It seems the universe does not fully agree on this, see e.g. &#8216;<a href="http://www.2uo.de/myths-about-urandom/">Myths about /dev/urandom</a>&#8216;). Use RSA and DSA defensively.</li>
+<li>Application developers should generate keys on first use, not on first install or boot, and heed warnings from lower-level libraries concerning insufficient entropy.</li>
+<li>Device manufacturers should avoid factory default keys or certificates, and consider seeding devices with a truly random seed at the factory. It as also important to ensure that effective entropy sources are present. Hardware random number generators should be used whenever possible.</li>
+<li>Certificate authorities should check for repeated, weak, and factorable keys.</li>
+<li>End users should regenerate default or automatically generated keys, and check for known weak keys.</li>
+<li>Security researchers should not assume the problem of secure randomness is solved!</li>
+</ul>
+<blockquote><p>
+  The fact that all major operating systems now provide cryptographic RNGs might lead security experts to believe that any entropy problems that still occur are the fault of developers taking foolish shortcuts. Our findings suggest otherwise: entropy-related vulnerabilities can result from complex interaction between hardware, operating systems, applications, and cryptographic primitives. We have yet to develop the engineering practices and principles necessary to make predictably secure use of unpredictable randomness across the diverse variety of systems where it is required.
+</p></blockquote>
+					</div><!--end entry-->
+	<div class="post-footer">
+		<div class="comments"><a href="https://blog.acolyer.org/2015/09/16/mining-your-ps-and-qs-detection-of-widespread-weak-keys-in-network-devices/#comments">1 Comment</a></div>
+		<div class="categories">from &rarr; <a href="https://blog.acolyer.org/category/security/" rel="category tag">Security</a></div>
+	</div><!--end post footer-->
+</div><!--end post-->
+<div id="post-1150" class="post-1150 post type-post status-publish format-standard hentry category-security">
+	<div class="post-header">
+		<h2><a href="https://blog.acolyer.org/2015/09/15/md5-to-be-considered-harmful-someday/" rel="bookmark">MD5 To Be Considered Harmful&nbsp;Someday</a></h2>
+		<div class="date">September 15, 2015</div>
+	</div><!--end post header-->
+	<div class="meta clear">
+		<div class="tags"></div>
+		<div class="author">
+					</div>
+	</div><!--end meta-->
+	<div class="entry clear">
+				<p><a href="https://eprint.iacr.org/2004/357.pdf">MD5 To Be Considered Harmful Someday</a> &#8211; Kaminsky 2004</p>
+<p>A few people have asked if I can cover more security topics in The Morning Paper. It&#8217;s a subject area that always seems a little daunting to me (as in, &#8220;a little knowledge is a dangerous thing&#8221;), but it&#8217;s also a subject area that I feel it&#8217;s increasingly important to have a working understanding of.  So I accept the challenge and plan to cover a few more security related papers in amongst the morning paper mix. Coming from outside of the domain, it&#8217;s always hard to know where to get started. Fortunately there are experts out there who know far more about the subject area than I do, who have put together suggested reading lists. Some of the sources I&#8217;ve found so far include the <a href="https://www.eecs.umich.edu/courses/eecs588/readings.html">EECS 588 Computer Security Reading List</a>,  the <a href="http://www.cs.utexas.edu/~shmat/courses/cs380s/">CS380S Great Papers in Computer Security List</a>, and for those of you that have access to the ACM Digital Library,  the <a href="http://techpack.acm.org/security/bibliography.cfm">ACM TechPack on Security</a>. (If you know of other great resources, please let me know!).</p>
+<p>To kick things off, today&#8217;s choice is &#8216;MD5 To Be Considered Harmful Someday.&#8217; Written in 2004, it&#8217;s a story of collision-based attacks, measures and counter-measures, and how the security of a solution can be gradually eroded in the build-up to a &#8216;phase-change.&#8217;  And the lessons it teaches are still relevant to ponder today when trusting signed images.</p>
+<blockquote><p>
+  The point is not that MD5 has collapsed. It hasn’t. The point is that there’s a very clear trend regarding the security level of MD5, and it isn’t good. It is now undeniable that the selection of MD5 matters – the constraint that deployed implementations of the one-way hash primitive be functionally identical has been broken. The failures detected are not merely algorithmic or theoretical, rather new capabilities above and beyond what the primitive specifies are made available by the selection of MD5. It is not expected that this paper will cause a precipitous decline in the use of MD5; that will probably occur when a means of silently introducing single-bit errors in arbitrary (rather than chosen) MD5 payloads is discovered. But in the security community, we tend to complain about the ”phase change” nature of our systems that suddenly collapse from secure to insecure on the discovery of a ”zero day” exploit. The phase change for MD5 isn’t here yet, but it will come, someday. Nobody should be surprised when that day arrives.
+</p></blockquote>
+<p>(See the follow-up 4 years later, <a href="https://www.win.tue.nl/hashclash/rogue-ca/">MD5 Considered Harmful Today</a>).</p>
+<p>MD5 is a <em>oneway hash</em>. It turns an arbitrary amount of data into a 128 bit fingerprint of the data you feed it. The &#8216;oneway&#8217; part means that it&#8217;s easy to compute the hash given the data to be hashed, but <em>computationally infeasible</em> to go in the opposite direction &#8211; that is, given a hash, find some data that would produce it. Thus we can use the hash as a way of trusting that data hasn&#8217;t been changed or tampered with &#8211; if it hashes to the expected value, it must be the expected data.</p>
+<p>Given that you are compressing more than 128 bits into a 128 bit representation, it is inevitably the case that there exist multiple source data sets that all hash onto the same value. This is known as a <em>collision</em>.  What&#8217;s important in the trust model is that you can&#8217;t <em>deliberately engineer</em> a dataset to have a certain hash value. If you can do that, you can trick someone into believing they can trust your changed dataset to be a faithful copy of the original.</p>
+<p>Joux and Wang found an attack that lets you introduce small modifications into an input dataset, and still keep the same hash.</p>
+<blockquote><p>
+  For MD5 (and actually a number of popular hashing algorithms, SHA-1 not among them), it is possible to compute particular classes of input data for which subtle changes can be silently introduced without causing apparent changes in the final MD5 hash. Capacity is not huge – of the two 128 byte  roof-of-concept files released by Wang, only six bits differ. But many ”doppelganger” sets can be computed, each of which may be swapped out with the other at no effect to the resultant hash.
+</p></blockquote>
+<p>Being able to generate colliding 128 bit files doesn&#8217;t seem like a big danger. Most real world files will be much larger than 128 bits, and pulling off the same trick with a 100MB image file for example must be much harder?</p>
+<p>It turns out this 128 bit building block is all you need <em>if you put it at the start of the file</em>, due to the iterative nature of the MD5 algorithm, which starts with a 128 bit seed and then repeatedly &#8216;stirs in&#8217; additional 512-bit blocks of data until the end of the dataset is reached.</p>
+<blockquote><p>
+  Now, amongst the cryptological community there is a well known failure mode to the this particular construction: If at any point in the cascade two different datasets are stirred into equal 128 bit values, arbitrary data can be appended to both datasets and their hashes will remain equal. In  mathematical terms, using the ”+” sign to refer to concatenation and assuming length(x) and length(y) both evenly divide into the 64 byte blocksize of MD5, if md5(x) = md5(y), then md5(x+q) = md5(y +q).
+</p></blockquote>
+<p>So now we can make small alterations to files of arbitrary size, and produce hash collisions. MD5 hashes can no longer be relied on to indicated that a file on the file system has not been changed for example.  It&#8217;s a small chink in the armour, but enough to allow some limited attack vectors. An example is given of smuggling code past auditors:</p>
+<ul>
+<li>take an &#8216;evil payload&#8217; and AES encrypt it using as the key the SHA-1 of a 128-bit vector, <em>v</em></li>
+<li>take <em>v&#8217;</em>, a doppleganger of v, and create the innocent looking binary v&#8217; + the encrypted payload</li>
+<li>obtain an approved signature from auditors for this file (call it &#8216;Ice&#8217; since it is harmless)</li>
+<li>before shipping, replace v&#8217; with v to produce the shipped file &#8216;v + encrypted payload&#8217; this wil lhave the same hash value (call it &#8216;Fire,&#8217; since Fire burns)</li>
+<li>out in the wild, it&#8217;s now possible to decrypt the evil payload by computing the SHA-1 of v and using it as the key. </li>
+</ul>
+<p>Of course, this all requires the cooperation of a program that can do the necessary decryption. The real risk seems very small.</p>
+<blockquote><p>
+  But failures inside cryptographic primitives, even very small ones, tend to lead to slowly discovered catastrophic failures. MD5 does not seem to be an exception to this rule. We can do much more with the actual multicollision attack. The test vectors collide only when stirred into the default initial state for the MD5 algorithm; the attack itself works against any arbitrary state. The upshot here is that we can not only append arbitrary data but prepend it as well. Presently Fire and Ice required a dedicated external execution harness which could arouse suspicion. With prepending available, a correctly formatted binary executable could be synthesized that would self-analyze and branch appropriately depending on which vector was contained within.
+</p></blockquote>
+<p>&#8220;The multicollision attack against MD5 remains relatively weak, with special circumstances required for an attack to succeed,&#8221; but the seeds are sown for &#8216;someday, MD5 to be considered harmful&#8217;.</p>
+<p>The final section of the paper shows how the ability to modify a binary in such a way that MD5s are not changed can be used to support traceability of artefacts:</p>
+<blockquote><p>
+  Security is a battle between attackers and defenders, and defenders do not necessarily need to cede the ground of cryptographic exploitation to attackers alone. A research path known as ”Strikeback” examines the mechanisms by which a defender under attack can exploit weaknesses in his attackers to defend his systems.
+</p></blockquote>
+<p>MP3 players, for example, are tolerant of errors and &#8216;junk data&#8217; infecting the bitstream. So mp3 files with prepended data still play flawlessly.  Now we can produce two mp3 files that have the same md5 hash, play flawlessly, yet contain an extra bit of information &#8211; which of the two dopplegangers is prepended.</p>
+<blockquote><p>
+  A single bit is not useful. But we are not constrained to a single bit. Wang has disclosed that, given an arbitrary MD5 system state, her implementation is capable of finding a multicollision-capable set after approximately one hour of computation with one doppelganger computable every fifteen minutes after that. It is well within the realm of feasiblity to compute 16 sequential multicollision sets, each adapting to the MD5 state emitted by the previous, with 256 (or 2<sup>8</sup>)computed doppelgangers for each set. Now, instead of the single bit of information represented by the choice between vec1 and vec2, we have 8 bits of information per prepended block – and there are 16 blocks. This yields space for a 128 bit signature, and things just got much more interesting&#8230;
+</p></blockquote>
+<p>We can use that, for example, to prepend a unique 128 bit serial number to every copy of a song file that transmits through a P2P network, thus showing where it has come from. The search algorithms and file integrity mechanisms on P2P networks tend to be MD5 based, so nothing will fail &#8211; &#8220;except perhaps some of the opacity of the network.&#8221;</p>
+<p>A related technique is shown whereby a fingerprint of the computer on which software is packaged can be incorporated into the binary (without changing the md5), as another way of discretely tracking provenance.</p>
+<h3>What happened next?</h3>
+<p>Four years later came the publication of <a href="">MD5 Considered Harmful Today</a> which exploited the MD5 hash collision weakness to create a rogue Certificate Authority (CA) that was trusted by all browsers.</p>
+<blockquote><p>
+  &#8230;This certificate allows us to impersonate any website on the Internet, including banking and e-commerce sites secured using the HTTPS protocol. Our attack takes advantage of a weakness in the MD5 cryptographic hash function that allows the construction of different messages with the same MD5 hash. This is known as an MD5 &#8220;collision&#8221;. Previous work on MD5 collisions between 2004 and 2007 showed that the use of this hash function in digital signatures can lead to theoretical attack scenarios. Our current work proves that at least one attack scenario can be exploited in practice, thus exposing the security infrastructure of the web to realistic threats.
+</p></blockquote>
+<p>When it comes to security, ignoring &#8216;theoretical weaknesses&#8217; and failing to keep up to date with the latest recommendations can have serious consequences:</p>
+<blockquote><p>
+  The infrastructure of Certification Authorities is meant to prevent exactly this type of attack. Our work shows that known weaknesses in the MD5 hash function can be exploited in realistic attack, due to the fact that even after years of warnings about the lack of security of MD5, some root CAs are still using this broken hash function.
+</p></blockquote>
+					</div><!--end entry-->
+	<div class="post-footer">
+		<div class="comments"><a href="https://blog.acolyer.org/2015/09/15/md5-to-be-considered-harmful-someday/#comments">1 Comment</a></div>
+		<div class="categories">from &rarr; <a href="https://blog.acolyer.org/category/security/" rel="category tag">Security</a></div>
+	</div><!--end post footer-->
+</div><!--end post-->
+<div id="post-1148" class="post-1148 post type-post status-publish format-standard hentry category-datastores">
+	<div class="post-header">
+		<h2><a href="https://blog.acolyer.org/2015/09/14/fast-database-restarts-at-facebook/" rel="bookmark">Fast Database Restarts at&nbsp;Facebook</a></h2>
+		<div class="date">September 14, 2015</div>
+	</div><!--end post header-->
+	<div class="meta clear">
+		<div class="tags"></div>
+		<div class="author">
+					</div>
+	</div><!--end meta-->
+	<div class="entry clear">
+				<p><a href="https://research.facebook.com/publications/553456231437505/fast-database-restarts-at-facebook/">Fast Database Restarts at Facebook</a> &#8211; Goel et al. 2014</p>
+<p>In security, you&#8217;re only as secure as your weakest link in the chain. When it comes to agility, you&#8217;re only as fast as your slowest link in the chain. Updating and evolving a stateless middle tier is usually pretty quick, but what if you need to update and evolve a heavily stateful process &#8211; for example, the one hosting your database?  And what if that database spans 100+ servers?</p>
+<p>Facebook&#8217;s Scuba is a fast distributed in-memory database used by employees.  It is the workhorse behind code regression analysis, bug report monitoring, ads revenue monitoring, and performance debugging.</p>
+<blockquote><p>
+  At Facebook, we are accustomed to the agility that comes with frequent code deployments. New code is rolled out to our web product multiple times each week&#8230; We are continually improving the code for Scuba and would like to push new software releases at least once a week. However, restarting a Scuba machine clears its memory. Recovering all of its data from disk — about 120 GB per machine — takes 2.5-3 hours to read and format the data per machine. Even 10 minutes is a long downtime for the critical applications that rely on Scuba, such as detecting user-facing errors. Restarting only 2% of the servers at a time mitigates the amount of unavailable data, but prolongs the restart duration to about 12 hours, during which users see only partial query results and one engineer needs to monitor the servers carefully. We need a faster, less engineer intensive, solution to enable frequent software upgrades.
+</p></blockquote>
+<p>Keeping redundant copies of the data on different servers was rejected as being too expensive along two dimensions: (i) the hardware costs of hundreds of servers each with 144GB of RAM, and (ii) the engineering costs of replication. Inspired by other systems at Facebook (<a href="https://blog.acolyer.org/2015/05/19/tao-facebooks-distributed-data-store-for-the-social-graph/">TAO</a>,  memcache) that use shared memory to keep data alive across software upgrades, the team chose a different route.</p>
+<blockquote><p>
+  We observed that when we shutdown a server for a planned upgrade, we know that the memory state is good (unlike when a server shuts down unexpectedly, which might or might not be due to memory corruption). We decided to decouple the memory’s lifetime from the process’s lifetime. In this paper, we describe how we use shared memory to persist data from one process to the next&#8230;
+</p></blockquote>
+<p>Scuba doesn&#8217;t use shared memory in normal operation &#8211; which would have involved writing a custom allocator. Instead it copies data to shared memory during shutdown, and copies it back to the heap at startup. The shared memory format is similar to, but not identical to, the heap format.</p>
+<blockquote><p>
+  Copying data between heap and shared memory avoids some of the pitfalls in writing a custom allocator in shared memory, such as fragmentation and problems with thread safety and scalability. It also allows us to modify the in-memory format (in heap memory) and rollover to the new format using shared memory. We describe how to copy all of the data to shared memory and back without increasing<br />
+  the memory footprint of the data. Scuba’s new upgrade path is about 2-3 minutes per server, rather than 2-3 hours. The entire cluster upgrade time is now under an hour, rather than lasting 12 hours.
+</p></blockquote>
+<p>Each Scuba machine runs eight leaf servers (which store data), and one aggregator server.</p>
+<blockquote><p>
+  For recovery, eight servers mean that we can restart the servers one at a time, while the other seven servers continue to execute queries. We therefore maximize the number of disks in use for recovery while<br />
+  limiting the amount of offline data to 2% of the total. For example, suppose there are 100 machines. With one server per machine, we could restart only two servers. With a total of 800 leaf servers, we can restart 16 leaf servers on 16 machines at once and read from 16 disks. The full rollover thus takes much less time to complete. This technique also applies to parallelizing restarts using shared memory, although the critical resource is the memory bandwidth rather than the disk speed.
+</p></blockquote>
+<p>For crash recovery, disk is still used. Restarting using shared memory has two steps:</p>
+<ol>
+<li>On shutdown, all of the data is copied from heap memory to shared memory and a <em>valid bit</em> is set.</li>
+</ol>
+<blockquote><p>
+  Even though one leaf server only contains 10-15 GB of data, there is still not enough physical memory free to allocate enough space for it in shared memory, copy it all, and then free it from the heap. Instead, we copy data gradually, allocating enough space for one row block column at a time in shared memory, copying it, and then freeing it from the heap. There are hundreds of tables (and thousands of row block columns, with a maximum size of 2 GB) per leaf servers, so this method keeps the total memory footprint of the leaf nearly unchanged during both shutdown and restart&#8230;  since all pointers in a row block column are offsets from the start of the row block column, copying a row block column can be done in one call to memcpy. Therefore, copying a table only requires one call per row block column.
+</p></blockquote>
+<ol>
+<li>On startup a new server checks the valid bit in shared memory. If it is set, it copies the data from shared memory back to the heap. If it is not set, it reverts to recovering from disk.</li>
+</ol>
+<p>The whole process takes 2-3 minutes per server (vs 2-3 hours previously).</p>
+<blockquote><p>
+  Copying data between heap and shared memory has several advantages. Allocating and freeing heap memory during normal operation remains simple and uses well-tested code paths. The copying code is simple and, even though it is used infrequently, less likely to have bugs. Finally, separating the heap data structures from the shared memory data structures means that we can modify the heap data format and restart using shared memory. Furthermore, this fast rollover path allows us to deploy experimental software builds on a handful of machines, which we could not do if took longer. We can add more logging, test bug fixes, and try new software designs — and then revert the changes if we wish. This use of shared memory rollovers as a software development tool is common in the Memcache and TAO teams at Facebook.
+</p></blockquote>
+<p>Supporting fast restarts is also an interesting use case for <a href="https://blog.acolyer.org/2015/04/14/mojim-a-reliable-and-highly-available-non-volatile-memory-system/">NVMM</a>.</p>
+					</div><!--end entry-->
+	<div class="post-footer">
+		<div class="comments"><a href="https://blog.acolyer.org/2015/09/14/fast-database-restarts-at-facebook/#respond">Leave a comment</a></div>
+		<div class="categories">from &rarr; <a href="https://blog.acolyer.org/category/datastores/" rel="category tag">Datastores</a></div>
+	</div><!--end post footer-->
+</div><!--end post-->
+<div id="post-1145" class="post-1145 post type-post status-publish format-standard hentry category-networking">
+	<div class="post-header">
+		<h2><a href="https://blog.acolyer.org/2015/09/11/jupiter-rising-a-decade-of-clos-topologies-and-centralized-control-in-googles-datacenter-network/" rel="bookmark">Jupiter Rising: A Decade of Clos Topologies and Centralized Control in Google&#8217;s Datacenter&nbsp;Network</a></h2>
+		<div class="date">September 11, 2015</div>
+	</div><!--end post header-->
+	<div class="meta clear">
+		<div class="tags"></div>
+		<div class="author">
+					</div>
+	</div><!--end meta-->
+	<div class="entry clear">
+				<p><a href="http://conferences.sigcomm.org/sigcomm/2015/pdf/papers/p183.pdf">Jupiter Rising: A Decade of Clos Topologies and Centralized Control in Google&#8217;s Datacenter Network</a> &#8211; Singh et. al (Google) 2015</p>
+<p>Let&#8217;s end the week with something completely different: a look at ten years and five generations of networking within Google&#8217;s datacenters.</p>
+<p>Bandwidth demands <em>within</em> the datacenter are doubling every 12-15 months, even faster than the wide-area internet. At Google, these demands are driven by a combination of remote storage access, large-scale data processing, and interactive web services. Even 10 years ago, the cost and complexity of traditional network architectures in Google&#8217;s datacenters was prohibitive. The high-end commercially available solutions were derivatives of WAN technology with a complex feature set not required within the datacenter.</p>
+<blockquote><p>
+  Inspired by the community’s ability to scale out computing with parallel arrays of commodity servers, we sought a similar approach for networking. This paper describes our experience with building five generations of custom data center network hardware and software leveraging commodity hardware components, while addressing the control and management requirements introduced by our approach.
+</p></blockquote>
+<p>The networks were built around three core principles:</p>
+<ol>
+<li><a href="https://en.m.wikipedia.org/wiki/Clos_network">Clos topologies</a> &#8211; these can scale to nearly abitrary size and have substantial in-built path diversity and redundancy so that the failure of any individual element results in relatively small capacity reduction. </li>
+<li>Merchant silicon &#8211; commodity priced off-the-shelf switching components rather than commercial switches.</li>
+<li>Centralized control protocols &#8211; Clos topologies dramatically increase the number of switching elements, which stresses existing routing and management protocols. Within the datacenter, there is a statically configured topology. Dynamically changing link state relative to this is obtained from a central dynamically elected point in the network. </li>
+</ol>
+<blockquote><p>
+  Overall, our software architecture more closely resembles control in large-scale storage and compute platforms than traditional networking protocols. Network protocols typically use soft state based on pair-wise message exchange, emphasizing local autonomy. We were able to use the distinguishing characteristics and needs of our datacenter deployments to simplify control and management protocols&#8230;
+</p></blockquote>
+<p>It&#8217;s interesting to consider the bifurcation of networking needs here. At the datacenter level, to address the required scale, we need to exploit the fact that the topology is relatively static. Meanwhile, if you look at the  applications that are deployed on top (e.g. in a public cloud setting), we have a very dynamic topology with constant change requiring flexible SDN approaches.</p>
+<p>At Google, the demand is to run large clusters, which spreads load, improves scheduling,  and reduces failure exposure.</p>
+<blockquote><p>
+  Running storage across a cluster requires both rack and power diversity to avoid correlated failures. Hence, cluster data should be spread across the cluster’s failure domains for resilience. However, such spreading naturally eliminates locality and drives the need for uniform bandwidth across the cluster.
+</p></blockquote>
+<p>Google&#8217;s first attempt at building a cluster network, <strong>Firehose 1.0</strong>, <em>failed to go into production and was a great success</em>!   It&#8217;s a sign of maturity in the organisation that both can be true at the same time:</p>
+<blockquote><p>
+  &#8230;we consider FH1.0 to be a landmark effort internally. Without it and the associated learning, the efforts that followed would not have been possible.
+</p></blockquote>
+<p>Whereas Firehose 1.0 used regular servers to house switch chips. <strong>Firehose 1.1</strong> switched to custom enclosures and a dedicated Single Board Computer to control the linecards.  The 14m length restriction of the copper interconnect cables proved to be a significant challenge in deployment.  So Google <em>collaborated with vendors to develop a custom Electrical/Optical/Electrical interconnect cable</em> that could span 100m and was less bulky. Firehose 1.1 made it into production!</p>
+<p>The third generation cluster fabric was called <strong>Watchtower</strong>.</p>
+<blockquote><p>
+  The key idea was to leverage the next-generation merchant silicon switchchips, 16x10G, to build a traditional switch chassis with a backplane.
+</p></blockquote>
+<p>The larger bandwidth density of the switching silicon supported larger fabrics with more bandwidth to individual servers,  &#8220;a necessity as servers were employing an ever increasing number of cores.&#8221; The cabling complexity was also further reduced in this iteration by using fibre bundling. This had the added benefit of being more cost effective too:</p>
+<blockquote><p>
+  &#8230; manufacturing fiber in bundles is more cost effective than individual strands. Cable bundling helped reduce fiber cost (capex + opex) by nearly 40% and expedited bringup of Watchtower fabric by multiple weeks
+</p></blockquote>
+<p>Although Watchtower fabrics were substantially cheaper than anything available for purchase, and could handle greater scale, the absolute cost was still significant.  The dominant cost factor was the optics and associated fibre.</p>
+<blockquote><p>
+  Hence, we enabled Watchtower fabrics to support depopulated deployment, where we initially deployed only 50% of the maximum bisection bandwidth. Importantly, as the bandwidth demands of a depop cluster grew, we could fully populate it to 100% bisection in place.
+</p></blockquote>
+<p>The fourth generation cluster fabric was <strong>Saturn</strong>. &#8220;The principal goals were to respond to continued increases in server bandwidth demands and to further increase maximum cluster scale. Saturn was<br />
+built from 24x10G merchant silicon building blocks.&#8221;</p>
+<p>And so we arrive at <strong>Jupiter</strong>, which needed to scale to 6x the size of the largest previously deployed fabric.</p>
+<blockquote><p>
+  As bandwidth requirements per server continued to grow, so did the need for uniform bandwidth across all clusters in the datacenter. With the advent of dense 40G capable merchant silicon, we could consider expanding our Clos fabric across the entire datacenter subsuming the inter-cluster networking layer. This would potentially enable an unprecedented pool of compute and storage for application scheduling. Critically, the unit of maintenance could be kept small enough relative to the size of the fabric that most applications could now be agnostic to network maintenance windows unlike previous generations of the network.
+</p></blockquote>
+<p>From Watchtower onwards, the cluster fabric was connected directly to the inter-cluster networking layer with Cluster Border Routers (CBRs).</p>
+<blockquote><p>
+  As a rule of thumb, we allocated 10% of aggregate intra-cluster bandwidth for external connectivity using one to three aggregation blocks. These aggregation blocks were physically and topologically identical to those used for ToR connectivity. However, we reallocated the ports normally employed for ToR connectivity to connect to external fabrics. We configured parallel links between each CBR switch in these blocks and an external switch as Link Aggregation Groups (LAGs) or trunks. We used standard external BGP (eBGP) routing between the CBRs and the inter-cluster networking switches. CBR switches learned the default route via BGP from the external peers and redistributed the route through Firepath, our intra-cluster IGP protocol .
+</p></blockquote>
+<p>Vendor-based inter-cluster switching was then replaced with <em>Freedome</em>: &#8220;we employed the BGP capability we developed in our cluster routers to build two-stage fabrics that could speak BGP at both the inter cluster and intra campus connectivity layers.&#8221;</p>
+<p>Google built their own <em>control plane</em> to manage the network hardware.</p>
+<blockquote><p>
+  We chose to build our own control plane for a number of reasons. First, and most important, existing routing protocols did not at the time have good support for multipath, equal-cost forwarding. Second, there were no high quality open source routing stacks a decade ago. Further, it was a substantial amount of work to modify our hardware switch stack to tunnel control-protocol packets running inline between hardware line cards to protocol processes. Third, we were concerned about the protocol overhead of running broadcast-based routing protocols across fabrics of the scale we were targeting with hundreds or even thousands of switching elements.
+</p></blockquote>
+<p>Inspired by the success of the Google File System with its centralized manager, the networking team adopted a similar design, exploiting the fact that the topology was relatively static. This appeared to be &#8220;substantially cheaper and more efficient.&#8221;</p>
+<blockquote><p>
+  Overall, we treated the datacenter network as a single fabric with tens of thousands of ports rather than a collection of hundreds of autonomous switches that had to dynamically discover information about the fabric.
+</p></blockquote>
+<p>There&#8217;s a nice lesson about expecting failure when you do anything at scale here too:</p>
+<blockquote><p>
+  Building a fabric with thousands of cables invariably leads to multiple cabling errors. Moreover, correctly cabled links may be re-connected incorrectly after maintenance such as linecard replacement. Allowing traffic to use a miscabled link can lead to forwarding loops. Links that fail unidirectionally or develop high packet error rates should also be avoided and scheduled for replacement. To address these issues, we developed Neighbor Discovery (ND), an online liveness and peer correctness checking protocol.
+</p></blockquote>
+<p>Simplicity and reproducibility of cluster deployments was favoured over flexibility.  A configuration system generates all the needed artefacts for a deployment:</p>
+<blockquote><p>
+  The configuration system is a pipeline that accepts a specification of basic cluster-level parameters such as the size of the spine, base IP prefix of the cluster and the list of ToRs and their rack indexes. It then generates a set of output files for various operations groups: i) a simplified bill of materials for supply chain operations; ii) rack layout details, cable bundling and port mapping for datacenter operations; iii) CPN design and switch addressing details (e.g., DNS) for network operations; iv) updates to network and monitoring databases and systems; v) a common fabric configuration file for the switches; and vi) summary data to feed graphical views to audit the logical topology and cluster specifications.
+</p></blockquote>
+<p>Switch management was designed to integrate with the existing server management infrastructure, with network switches essentially looking like regular machines to the rest of the fleet.</p>
+<p>There are many more details in the paper than I have space to cover here.  I will leave you with the authors&#8217; conclusions:</p>
+<blockquote><p>
+  This paper presents a retrospective on ten years and five generations of production datacenter networks. We employed complementary techniques to deliver more bandwidth to larger clusters than would otherwise be possible at any cost. We built multi-stage Clos topologies from bandwidth-dense but feature-limited merchant switch silicon. Existing routing protocols were not easily adapted to Clos topologies. We departed from conventional wisdom to build a centralized route controller that leveraged global configuration of a pre-defined cluster plan pushed to every datacenter switch. This centralized control extended to our management infrastructure, enabling us to eschew complex protocols in favor of best practices from managing the server fleet. Our approach has enabled us to deliver substantial bisection bandwidth for building-scale fabrics, all with significant application benefit.
+</p></blockquote>
+					</div><!--end entry-->
+	<div class="post-footer">
+		<div class="comments"><a href="https://blog.acolyer.org/2015/09/11/jupiter-rising-a-decade-of-clos-topologies-and-centralized-control-in-googles-datacenter-network/#respond">Leave a comment</a></div>
+		<div class="categories">from &rarr; <a href="https://blog.acolyer.org/category/networking/" rel="category tag">Networking</a></div>
+	</div><!--end post footer-->
+</div><!--end post-->
+<div id="post-1132" class="post-1132 post type-post status-publish format-standard hentry category-distributed-systems">
+	<div class="post-header">
+		<h2><a href="https://blog.acolyer.org/2015/09/10/out-of-the-fire-swamp-part-iii-go-with-the-flow/" rel="bookmark">Out of the Fire Swamp &#8211; Part III, Go with the&nbsp;flow.</a></h2>
+		<div class="date">September 10, 2015</div>
+	</div><!--end post header-->
+	<div class="meta clear">
+		<div class="tags"></div>
+		<div class="author">
+					</div>
+	</div><!--end meta-->
+	<div class="entry clear">
+				<h2>Go with the flow</h2>
+<p>At the conclusion of <a href="https://blog.acolyer.org/?p=1129">Part II</a> we introduced the notion of a (micro)service owning exclusive access to a set of data in order to manage application invariants. Once we start to break things down this way, we need to start thinking about the flow of data between microservices.</p>
+<h3>A better paradigm?</h3>
+<p>So far we&#8217;ve been discussing the adaptation of traditional ORM-style patterns to cloud native applications, retaining the register-based view of data. By introducing microservices responsible for their own data, we observed that now we need to think about the flow of data between microservices &#8211; aka. <em>dataflow</em>. That&#8217;s interesting because <a href="https://blog.acolyer.org/?p=1113">dataflow-based approaches operate at a level of abstraction above object/entity based approaches</a>. Putting this together with immutability (which <a href="http://www.cidrdb.org/cidr2015/Papers/CIDR15_Paper16.pdf">changes everything</a>) leads to thinking about append-only storage mechanisms and events as the unit of currency that are stored and flow between services. We therefore have an <em>event</em> store (as a specialism of the more general datastore), and an <em>event</em> flow as a specialism of the more general dataflow. Events are generated as a result of processing Commands (transactions). This style of thinking has led to architectures such as CQRS.</p>
+<p>With ever cheaper storage and the rise of data science, the event store is a great fit because it lets us ask so many retrospective questions of the data. We genuinely retain more value for the business because of the options that keeps open to us. Here&#8217;s an analogy: the register model is a bit like a banking application that simply maintains an account balance &#8211; all we can ask is how much money is currently in an account; the event store model is like retaining the transaction ledger &#8211; which lets us perform all sorts of historical analyses concerning account behaviour, as well as being able to <em>derive</em> the current balance.</p>
+<p>In the usual terminology, services facing the outside world may receive <em>Commands</em> (requests to perform some action) and <em>Queries</em>. Processing a Command may generate zero or more <em>Events</em> which tell us information about something that has happened. An example command could be &#8220;add item X to shopping basket&#8221;, and assuming the add is successful we might generate an event &#8220;X added to shopping basket&#8221;. If we want to know the current <em>state</em> of the shopping basket we can replay its event log.</p>
+<p>Hmm, that should ring a bell. We want the ALPS properties so we&#8217;ll have multiple replicas that can process commands. If we&#8217;re creating the state as a result of processing a series of events then we essentially have a state machine where events represent operations. Unless we&#8217;ve taken great care, the order of events typically matters. This is a hard problem! In fact it&#8217;s the problem that consensus algorithms are designed to solve, and they&#8217;re <em>notorious</em> for being hard to understand and tricky to get right. Take a look for example at <a href="https://blog.acolyer.org/2015/03/06/viewstamped-replication-revisited/">Viewstamped Replication Revisited</a> where the parallels are very clear.</p>
+<p>If we try to solve the problem by making it so that event ordering doesn&#8217;t matter, we are back at commutativity and monotonicity. The same shopping basket example is modelled with an Observed-Remove Set CRDT in &#8216;<a href="https://blog.acolyer.org/2015/03/18/a-comprehensive-study-of-convergent-and-commutative-replicated-data-types/">A Comprehensive Study of Convergent and Commutative Replicated Data Types</a>&#8216;.</p>
+<p>Event sourcing can be a useful technique and help maintain flexibility and agility in a system, but it&#8217;s <em>no silver bullet</em> when it comes to reasoning about consistency and application invariants.</p>
+<p>A short word on CQRS, which is an optional architectural style often associated with event sourcing. In CQRS one part of the system (a service) handles commands, and the events that are produced as a result flow to other services that maintain materialized views optimised for answering queries. In the typical embodiment, we&#8217;re offering only eventually consistent guarantees for those views. But we want them to be causally consistent &#8211; the view should represent a causal cut. To achieve this we need to track causal dependencies of <em>events</em>, and since they originate from commands, which can be influenced by information that has been viewed, the causal loop has to start with explicit specification of cause when commands are issued and the metadata needs to flow all through the system. We probably want to respect the atomicity of causal transactions too. CQRS can be a useful technique, but if we&#8217;re trying to raise the bar to the strongest possible consistency available to us, it&#8217;s no silver bullet either.</p>
+<p>But we can&#8217;t just duck the problem:</p>
+<blockquote><p>
+  Reasoning about the consistency properties of applications composed from a variety of services requires reasoning both about the semantic properties of components and how these properties are preserved across compositions with other components. Hence it requires a model that captures both component semantics and the dependencies between interacting components. One approach is to view the distributed system as an asynchronous dataflow, in which streams of inputs pass through a graph of components that filter, transform, and combine them into streams of outputs.
+</p></blockquote>
+<p>(Alvaro et. al, <a href="https://blog.acolyer.org/?p=1113">Consistency without Borders</a>)</p>
+<p>Confluence analysis can be applied at the dataflow level, and depends once again on application level annotations. The <a href="https://blog.acolyer.org/2015/01/05/blazes-coordination-analysis-for-distributed-programs/">Blazes paper</a> explores some of these ideas, as well as some interesting hints when it comes to composing microservice-based dataflows. For example, put replication <em>upstream</em> of confluent components, and caching <em>downstream</em> (we can view the CQRS style materialized view as a form of cache in this model).</p>
+<p>The event model has a lot of merit, and following the lead of Blazes we could categorise microservices as either confluent or order-sensistive, and as either read-only or a write-path. This facilitates the same kind of &#8216;just enough coordination&#8217; approach that we looked at with ADM.</p>
+<p>Suppose we have a cluster of microservices within a bounded context. Commands and Queries arrive from outside of the context, and Events flow within it. The microservices are joined together by a <em>dataflow</em>. Viewed through a different lens, this looks like an <em>unbounded stream processing</em> problem! And that&#8217;s an interesting insight because we&#8217;ve studied systems designed to support dataflow processing over unbounded streams in previous editions of The Morning Paper. For example, see the <a href="https://blog.acolyer.org/2015/08/18/the-dataflow-model-a-practical-approach-to-balancing-correctness-latency-and-cost-in-massive-scale-unbounded-out-of-order-data-processing/">Google Cloud Dataflow Model</a> and <a href="https://blog.acolyer.org/2015/08/19/asynchronous-distributed-snapshots-for-distributed-dataflows/">Apache Flink</a>.</p>
+<p>Keep following this logic, and a microservice ends up looking like a function processing events at a node in a dataflow graph. Which is also very reminiscent of the design of <a href="http://docs.aws.amazon.com/lambda/latest/dg/welcome.html">AWS Lambda</a>.</p>
+<p>If we can dynamically update the dataflow graph, we have ourselves a very interesting agile platform. Not all applications (or parts of applications) will be constructed this way, but it&#8217;s a powerful new tool in the toolbox for those cases where it can be a fit.</p>
+<h3>Summary</h3>
+<p>We have a data crisis &#8211; applications face data corruption (integrity violations) and data loss, often silently. The mechanisms popular today seem powerless to prevent it, and if we keep using them as we move towards cloud-native style applications, things will only get worse.</p>
+<p>It&#8217;s time to put the application considerations back at the centre, and by starting with application invariants and a collaboration between application and datastore provide just-enough coordination up to the point of causal+ consistency, and an apology mechanism beyond that point. An Application Datastore Mapper (ADM) can layer this on top of an underlying eventually consistent store.</p>
+<p>When we start looking at microservices, we need to bring the dataflow of events between microservices to the fore. This then becomes amenable to dataflow analysis and optimisation, and the use of dataflow platforms designed for unbounded stream processing as a fabric connecting microservices. (The roll-your-own alternative could perhaps be described as &#8216;feral dataflow coordination&#8217;). Events by themselves are no consistency silver bullet though.</p>
+<h3>Coda: R.O.U.S.</h3>
+<p>I didn&#8217;t address the problem of the Rodents Of Unusual Size, frankly I don&#8217;t think they exist.</p>
+					</div><!--end entry-->
+	<div class="post-footer">
+		<div class="comments"><a href="https://blog.acolyer.org/2015/09/10/out-of-the-fire-swamp-part-iii-go-with-the-flow/#comments">5 Comments</a></div>
+		<div class="categories">from &rarr; <a href="https://blog.acolyer.org/category/distributed-systems/" rel="category tag">Distributed Systems</a></div>
+	</div><!--end post footer-->
+</div><!--end post-->				<div class="navigation index">
+			<div class="alignleft"><a href="https://blog.acolyer.org/page/56/" >&laquo; Older Entries</a></div>
+			<div class="alignright"><a href="https://blog.acolyer.org/page/54/" >Newer Entries &raquo;</a></div>
+		</div><!--end navigation-->
+			</div><!--end content-->
+	<div id="sidebar">
+																		<ul class="thin-sidebar">			<li id="text-4" class="widget widget_text"><h2 class="widgettitle">Subscribe </h2>			<div class="textwidget"><div align="center">
+<a href="http://eepurl.com/bbzPm9"><img src="https://adriancolyer.files.wordpress.com/2015/01/mail-new-icon.png?w=600"></a>
+<br />never miss an issue! The Morning Paper delivered straight to your inbox.
+</div></div>
+		</li><li id="search-3" class="widget widget_search"><h2 class="widgettitle">Search</h2><form method="get" id="search_form" action="https://blog.acolyer.org/">
+	<div>
+		<input type="text" value="type and press enter" name="s" id="s" onfocus="if (this.value == 'type and press enter') {this.value = '';}" onblur="if (this.value == '') {this.value = 'type and press enter';}" />
+		<input type="hidden" value="Search" />
+	</div>
+</form></li><li id="archives-3" class="widget widget_archive"><h2 class="widgettitle">Archives</h2>		<label class="screen-reader-text" for="archives-dropdown-3">Archives</label>
+		<select id="archives-dropdown-3" name="archive-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'>
+
+			<option value="">Select Month</option>
+				<option value='https://blog.acolyer.org/2017/05/'> May 2017 &nbsp;(21)</option>
+	<option value='https://blog.acolyer.org/2017/04/'> April 2017 &nbsp;(11)</option>
+	<option value='https://blog.acolyer.org/2017/03/'> March 2017 &nbsp;(23)</option>
+	<option value='https://blog.acolyer.org/2017/02/'> February 2017 &nbsp;(21)</option>
+	<option value='https://blog.acolyer.org/2017/01/'> January 2017 &nbsp;(25)</option>
+	<option value='https://blog.acolyer.org/2016/12/'> December 2016 &nbsp;(14)</option>
+	<option value='https://blog.acolyer.org/2016/11/'> November 2016 &nbsp;(22)</option>
+	<option value='https://blog.acolyer.org/2016/10/'> October 2016 &nbsp;(21)</option>
+	<option value='https://blog.acolyer.org/2016/09/'> September 2016 &nbsp;(20)</option>
+	<option value='https://blog.acolyer.org/2016/07/'> July 2016 &nbsp;(16)</option>
+	<option value='https://blog.acolyer.org/2016/06/'> June 2016 &nbsp;(22)</option>
+	<option value='https://blog.acolyer.org/2016/05/'> May 2016 &nbsp;(22)</option>
+	<option value='https://blog.acolyer.org/2016/04/'> April 2016 &nbsp;(12)</option>
+	<option value='https://blog.acolyer.org/2016/03/'> March 2016 &nbsp;(23)</option>
+	<option value='https://blog.acolyer.org/2016/02/'> February 2016 &nbsp;(21)</option>
+	<option value='https://blog.acolyer.org/2016/01/'> January 2016 &nbsp;(23)</option>
+	<option value='https://blog.acolyer.org/2015/12/'> December 2015 &nbsp;(10)</option>
+	<option value='https://blog.acolyer.org/2015/11/'> November 2015 &nbsp;(21)</option>
+	<option value='https://blog.acolyer.org/2015/10/'> October 2015 &nbsp;(22)</option>
+	<option value='https://blog.acolyer.org/2015/09/'> September 2015 &nbsp;(22)</option>
+	<option value='https://blog.acolyer.org/2015/08/'> August 2015 &nbsp;(22)</option>
+	<option value='https://blog.acolyer.org/2015/06/'> June 2015 &nbsp;(21)</option>
+	<option value='https://blog.acolyer.org/2015/05/'> May 2015 &nbsp;(21)</option>
+	<option value='https://blog.acolyer.org/2015/04/'> April 2015 &nbsp;(14)</option>
+	<option value='https://blog.acolyer.org/2015/03/'> March 2015 &nbsp;(23)</option>
+	<option value='https://blog.acolyer.org/2015/02/'> February 2015 &nbsp;(23)</option>
+	<option value='https://blog.acolyer.org/2015/01/'> January 2015 &nbsp;(21)</option>
+	<option value='https://blog.acolyer.org/2014/12/'> December 2014 &nbsp;(15)</option>
+	<option value='https://blog.acolyer.org/2014/11/'> November 2014 &nbsp;(20)</option>
+	<option value='https://blog.acolyer.org/2014/10/'> October 2014 &nbsp;(20)</option>
+	<option value='https://blog.acolyer.org/2011/05/'> May 2011 &nbsp;(3)</option>
+
+		</select>
+		</li><li id="top-posts-3" class="widget widget_top-posts"><h2 class="widgettitle">Most read in the last few days</h2><ul>				<li>
+										<a href="https://blog.acolyer.org/2017/05/29/an-empirical-study-on-the-correctness-of-formally-verified-distributed-systems/" class="bump-view" data-bump-view="tp">
+						An empirical study on the correctness of formally verified distributed systems					</a>
+									</li>
+							<li>
+										<a href="https://blog.acolyer.org/2017/05/11/understanding-deep-learning-requires-re-thinking-generalization/" class="bump-view" data-bump-view="tp">
+						Understanding deep learning requires re-thinking generalization					</a>
+									</li>
+							<li>
+										<a href="https://blog.acolyer.org/2016/04/21/the-amazing-power-of-word-vectors/" class="bump-view" data-bump-view="tp">
+						The amazing power of word vectors					</a>
+									</li>
+							<li>
+										<a href="https://blog.acolyer.org/2017/05/24/bolt-i-know-what-you-did-last-summer-in-the-cloud/" class="bump-view" data-bump-view="tp">
+						Bolt: I know what you did last summer... in the cloud					</a>
+									</li>
+							<li>
+										<a href="https://blog.acolyer.org/2017/05/26/apps-with-hardware-enabling-run-time-architectural-customization-in-smart-phones/" class="bump-view" data-bump-view="tp">
+						Apps with hardware: enabling run-time architectural customization in smart phones					</a>
+									</li>
+							<li>
+										<a href="https://blog.acolyer.org/2017/05/22/typed-architectures-architectural-support-for-lightweight-scripting/" class="bump-view" data-bump-view="tp">
+						Typed Architectures: architectural support for lightweight scripting					</a>
+									</li>
+							<li>
+										<a href="https://blog.acolyer.org/2017/05/25/neurosurgeon-collaborative-intelligence-between-the-cloud-and-the-mobile-edge/" class="bump-view" data-bump-view="tp">
+						Neurosurgeon: collaborative intelligence between the cloud and the mobile edge					</a>
+									</li>
+							<li>
+										<a href="https://blog.acolyer.org/2017/05/19/who-controls-the-internet-analyzing-global-threats-using-property-traversal-graphs/" class="bump-view" data-bump-view="tp">
+						Who controls the Internet? Analyzing global threats using property traversal graphs					</a>
+									</li>
+							<li>
+										<a href="https://blog.acolyer.org/2017/05/12/learning-to-act-by-predicting-the-future/" class="bump-view" data-bump-view="tp">
+						Learning to act by predicting the future					</a>
+									</li>
+							<li>
+										<a href="https://blog.acolyer.org/2014/11/24/use-of-formal-methods-at-amazon-web-services/" class="bump-view" data-bump-view="tp">
+						Use of Formal Methods at Amazon Web Services					</a>
+									</li>
+			</ul></li><li id="rss_links-3" class="widget widget_rss_links"><h2 class="widgettitle">RSS</h2><ul><li><a href="https://blog.acolyer.org/feed/" title="Subscribe to Posts">RSS - Posts</a></li><li><a href="https://blog.acolyer.org/comments/feed/" title="Subscribe to Comments">RSS - Comments</a></li></ul>
+</li><li id="twitter_timeline-3" class="widget widget_twitter_timeline"><h2 class="widgettitle">Live on twitter</h2><a class="twitter-timeline" data-width="225" data-height="400" data-theme="light" data-link-color="#f96e5b" data-border-color="#e8e8e8" data-tweet-limit="10" data-lang="EN" data-partner="jetpack" data-widget-id="519408925733425153">My Tweets</a></li>		</ul>	</div><!--end sidebar-->	<div id="footer">
+		<div class="footer-liner">
+			<p class="right"><a href="https://wordpress.com/?ref=footer_blog">Blog at WordPress.com.</a></p>
+			<p></p>
+		</div><!-- .footer-liner -->
+	</div><!--end footer-->
+</div><!--end wrapper-->
+		<script type="text/javascript">
+		//<![CDATA[
+		var infiniteScroll = {"settings":{"id":"content","ajaxurl":"https:\/\/blog.acolyer.org\/?infinity=scrolling","type":"scroll","wrapper":true,"wrapper_class":"infinite-wrap","footer":true,"click_handle":"1","text":"Older posts","totop":"Scroll back to top","currentday":"10.09.15","order":"DESC","scripts":[],"styles":[],"google_analytics":false,"offset":55,"history":{"host":"blog.acolyer.org","path":"\/page\/%d\/","use_trailing_slashes":true,"parameters":""},"query_args":{"paged":55,"error":"","m":"","p":0,"post_parent":"","subpost":"","subpost_id":"","attachment":"","attachment_id":0,"name":"","static":"","pagename":"","page_id":0,"second":"","minute":"","hour":"","day":0,"monthnum":0,"year":0,"w":0,"category_name":"","tag":"","cat":"","tag_id":"","author":"","author_name":"","feed":"","tb":"","meta_key":"","meta_value":"","preview":"","s":"","sentence":"","title":"","fields":"","menu_order":"","embed":"","category__in":[],"category__not_in":[],"category__and":[],"post__in":[],"post__not_in":[],"post_name__in":[],"tag__in":[],"tag__not_in":[],"tag__and":[],"tag_slug__in":[],"tag_slug__and":[],"post_parent__in":[],"post_parent__not_in":[],"author__in":[],"author__not_in":[],"posts_per_page":7,"ignore_sticky_posts":false,"suppress_filters":false,"cache_results":false,"update_post_term_cache":true,"lazy_load_term_meta":true,"update_post_meta_cache":true,"post_type":"","nopaging":false,"comments_per_page":"50","no_found_rows":false,"order":"DESC"},"last_post_date":"2015-09-10 06:00:00","stats":"blog=23592848&v=wpcom&tz=1&user_id=0&subd=adriancolyer&x_pagetype=infinite"}};
+		//]]>
+		</script>
+		<!--  -->
+<script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201722y'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s1.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781h'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	</div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"https:\/\/adriancolyer.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"https:\/\/adriancolyer.wordpress.com\/wp-login.php?action=logout&_wpnonce=37aecf2862","homeURL":"https:\/\/blog.acolyer.org\/","postID":"1163","gravDefault":"identicon","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"","userIsLoggedIn":"","isJetpack":"0","text_direction":"ltr"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??/wp-content/js/jquery/jquery.autoresize.js,/wp-content/mu-plugins/highlander-comments/script.js?m=1479964158j'></script>
+		<div id="infinite-footer">
+			<div class="container">
+				<div class="blog-info">
+					<a id="infinity-blog-title" href="https://blog.acolyer.org/" rel="home">
+						the morning paper					</a>
+				</div>
+				<div class="blog-credits">
+					<a href="https://wordpress.com/?ref=footer_blog">Blog at WordPress.com.</a> 				</div>
+			</div>
+		</div><!-- #infinite-footer -->
+
+	<div id="carousel-reblog-box">
+		<form action="#" name="carousel-reblog">
+			<textarea id="carousel-reblog-content" name="carousel-reblog-content" placeholder="Add your thoughts here... (optional)"></textarea>
+			<label for="carousel-reblog-to-blog-id" id="carousel-reblog-lblogid">Post to</label>
+			<select name="carousel-reblog-to-blog-id" id="carousel-reblog-to-blog-id">
+						</select>
+
+			<div class="submit">
+				<span class="canceltext"><a href="#" class="cancel">Cancel</a></span>
+				<input type="submit" name="carousel-reblog-submit" class="button" id="carousel-reblog-submit" value="Reblog Post" />
+				<input type="hidden" id="carousel-reblog-blog-id" value="23592848" />
+				<input type="hidden" id="carousel-reblog-blog-url" value="https://blog.acolyer.org" />
+				<input type="hidden" id="carousel-reblog-blog-title" value="the morning paper" />
+				<input type="hidden" id="carousel-reblog-post-url" value="" />
+				<input type="hidden" id="carousel-reblog-post-title" value="" />
+			</div>
+
+			<input type="hidden" id="_wpnonce" name="_wpnonce" value="c6e30e64bb" /><input type="hidden" name="_wp_http_referer" value="/page/55/" />		</form>
+
+		<div class="arrow"></div>
+	</div>
+<link rel='stylesheet' id='all-css-0-3' href='https://s1.wp.com/wp-content/mu-plugins/carousel/jetpack-carousel.css?m=1481571546h' type='text/css' media='all' />
+<!--[if lte IE 8]>
+<link rel='stylesheet' id='jetpack-carousel-ie8fix-css'  href='https://s1.wp.com/wp-content/mu-plugins/carousel/jetpack-carousel-ie8fix.css?m=1412618825h&#038;ver=20121024' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='all-css-2-3' href='https://s1.wp.com/wp-content/mu-plugins/tiled-gallery/tiled-gallery.css?m=1443731146h' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var actionbardata = {"siteID":"23592848","siteName":"the morning paper","siteURL":"https:\/\/blog.acolyer.org","icon":"<img alt='' src='https:\/\/secure.gravatar.com\/blavatar\/09326a066a08237015d6b84f026d36ae?s=50&d=https%3A%2F%2Fs1.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png' class='avatar avatar-50' height='50' width='50' \/>","canManageOptions":"","canCustomizeSite":"","isFollowing":"","themeSlug":"pub\/vigilance","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/adriancolyer.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fblog.acolyer.org%2F2015%2F09%2F18%2Fbuffer-overflows-attacks-and-defenses-for-the-vulnerability-of-the-decade%2F","themeURL":"","xhrURL":"https:\/\/blog.acolyer.org\/wp-admin\/admin-ajax.php","nonce":"eeb3c55d65","isSingular":"","isFolded":"","isLoggedIn":"","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"980117aeb2\" \/>","referer":"https:\/\/blog.acolyer.org\/page\/55\/","canFollow":"1","statusMessage":"","customizeLink":"https:\/\/adriancolyer.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Fadriancolyer.wordpress.com%2Fpage%2F55%2F","i18n":{"view":"View site","follow":"Follow","following":"Following","edit":"Edit","login":"Log in","signup":"Sign up","customize":"Customize","report":"Report this content","themeInfo":"Get theme: Vigilance","shortlink":"Copy shortlink","copied":"Copied","followedText":"New posts from this site will now appear in your <a href=\"https:\/\/wordpress.com\/\">Reader<\/a>","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","editSubs":"Manage subscriptions","viewReader":"View site in the Reader","subscribe":"Sign me up","enterEmail":"Enter your email address","followers":"Join 1,081 other followers","alreadyUser":"Already have a WordPress.com account? <a href=\"https:\/\/adriancolyer.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fblog.acolyer.org%2F2015%2F09%2F18%2Fbuffer-overflows-attacks-and-defenses-for-the-vulnerability-of-the-decade%2F\">Log in now.<\/a>","stats":"Stats"}};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"https:\/\/blog.acolyer.org\/wp-admin\/admin-ajax.php","nonce":"e7c298931d","display_exif":"1","display_geo":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","download_original":"View full size <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","comment_registration":"0","require_name_email":"1","login_url":"https:\/\/adriancolyer.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fblog.acolyer.org%2F2015%2F09%2F10%2Fout-of-the-fire-swamp-part-iii-go-with-the-flow%2F","blog_id":"23592848","local_comments_commenting_as":"<fieldset><label for=\"email\">Email (Required)<\/label> <input type=\"text\" name=\"email\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-email-field\" \/><\/fieldset><fieldset><label for=\"author\">Name (Required)<\/label> <input type=\"text\" name=\"author\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-author-field\" \/><\/fieldset><fieldset><label for=\"url\">Website<\/label> <input type=\"text\" name=\"url\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-url-field\" \/><\/fieldset>","reblog":"Reblog","reblogged":"Reblogged","reblog_add_thoughts":"Add your thoughts here... (optional)","reblogging":"Reblogging...","post_reblog":"Post Reblog","stats_query_args":"blog=23592848&v=wpcom&tz=1&user_id=0&subd=adriancolyer","is_public":"1","reblog_enabled":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s1.wp.com/_static/??-eJx9kEFuAjEMRS9EMCBExaLqUVAmY1qHxAmxM9PenoA0o4pFdt/O/8+OYc7GJVZkBS8w4kQO8+/Wywb+PcVqcqjfxAKBbihwr1jxx/IYsHTMxFdi0r9VdLweNVt3gwuxA51JFYtRihiIsZOzYyQ2gy0QrbRMUyZNWAqNbdG11yM4pcRPwqoWd9sl1CenHUfmaxo8On1HLZypTUxgRVBfgVedC4p0hjtbUhUMy//N0miZr/i5P54Pu91pf/jwD1zHoR8='></script>
+<script type='text/javascript' src='https://platform.twitter.com/widgets.js?ver=20111117'></script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??-eJyVy8EOwiAMANAfslYTHXowfsuAhhRLJaxI/Hu97rTs+A4PR4XwViM1LB2q9MS6oA02owZe5vDy3CJUJlT6UCONrOmYlwPuuXX7sVCENItQ+671X8/yOF9u95Ob3NXlHw12Q+E='></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script type="text/javascript">
+			jQuery.extend( infiniteScroll.settings.scripts, ["jquery","jquery-core","jquery-migrate","mobile-useragent-info","postmessage","jquery_inview","jetpack_resize","spin","jquery.spin","grofiles-cards","wpgroho","jquery.autoresize","highlander-comments","devicepx","jetpack_likes_queuehandler","the-neverending-homepage","jetpack-twitter-timeline","wpcom-masterbar-js","wpcom-actionbar-bar","swfobject","videopress","jetpack-carousel","twitter-widgets","twitter-widgets-infinity","twitter-widgets-pending","tiled-gallery"] );
+			jQuery.extend( infiniteScroll.settings.styles, ["wpcom-smileys","jetpack_likes","the-neverending-homepage","infinity-vigilance","wpcom-core-compat-playlist-styles","mp6hacks","wpcom-bbpress2-staff-css","vigilance","jetpack-top-posts-widget","noticons","geo-location-flair","reblogging","a8c-global-print","wpcom-actionbar-bar","h4-global","highlander-comments","highlander-comments-ie7","jetpack-carousel","tiled-gallery","jetpack-carousel-ie8fix"] );
+		</script>		<script>
+			var _comscore = _comscore || [];
+			_comscore.push({
+				c1: "2",
+				c2: "7518284"
+			});
+			(function() {
+				var s = document.createElement("script"),
+					el = document.getElementsByTagName("script")[0];
+				s.defer = true;
+				s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+				el.parentNode.insertBefore(s, el);
+			})();
+		</script>
+		<noscript>
+			<p class="robots-nocontent"><img src="https://sb.scorecardresearch.com/p?c1=2&c2=7518284&c3=&c4=&c5=&c6=&c15=&cv=2.0&cj=1" alt="" style="display:none;" width="1" height="1" /></p>
+		</noscript><script src="//stats.wp.com/w.js?56" type="text/javascript" async defer></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'23592848','blog_tz':'1','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'23592848','v':'wpcom','tz':'1','user_id':'0','subd':'adriancolyer'}]);
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1LVmwrVi5vQS5fVFtfdHBbPyw1VXIrU3hWLHhmcmw0bWUwNiVnR3N1V2dDZTM4MGFxVndRQl1HNkJtOEQ0dVBbbk9jP2g4T29lWFFNTj0wRDY/M3V6LWF6cTFbcC0ubzArW0NVMWhMW2h4ci18N0E4T1BdZUdHQ0wveGREazlzc29KNWQxSExxJmdXYTQxYnpfWFloeE9Zb3IwLVVOaVB8a092ZVY4S1MzVFAmckgtRi55eS16UkdPMWh6Z0VWLTB5JWQzWit5OHNKLkpybjRCRHNFWWNDMkNMVmlvRHdEOGUmfksmSE02dj9VRHFWTVMuQ0JUaDRwN011P0NaRU95b1dBbEJiZTNGdS1KfDIuRmZEdD0mRnloTD1Pb0owUURkWndPJlFsaGUvfmo0NkF6Ri8vb0gzNDVpa0JRMw=='}]);
+_stq.push([ 'clickTrackerInit', '23592848', '0' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+
+}
+</script></body>
+</html>

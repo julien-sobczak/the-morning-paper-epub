@@ -1,0 +1,809 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>the morning paper | an interesting/influential/important paper from the world of CS every weekday morning, as selected by Adrian Colyer | Page 15</title>
+<!--[if lt IE 8]><link rel="stylesheet" type="text/css" media="screen" href="https://s0.wp.com/wp-content/themes/pub/vigilance/stylesheets/ie.css" /><![endif]-->
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" media="screen" href="https://s0.wp.com/wp-content/themes/pub/vigilance/stylesheets/ie6.css" /><![endif]-->
+<link rel="pingback" href="https://blog.acolyer.org/xmlrpc.php" />
+		<script src='https://r-login.wordpress.com/remote-login.php?action=js&amp;host=blog.acolyer.org&amp;id=23592848&amp;t=1496057205&amp;back=https%3A%2F%2Fblog.acolyer.org%2Fpage%2F15%2F' type="text/javascript"></script>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+			if ( 'function' === typeof WPRemoteLogin ) {
+				document.cookie = "wordpress_test_cookie=test; path=/";
+				if ( document.cookie.match( /(;|^)\s*wordpress_test_cookie\=/ ) ) {
+					WPRemoteLogin();
+				}
+			}
+		/* ]]> */
+		</script>
+		<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//adriancolyer.wordpress.com' />
+<link rel='dns-prefetch' href='//s1.wp.com' />
+<link rel="alternate" type="application/rss+xml" title="the morning paper &raquo; Feed" href="https://blog.acolyer.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="the morning paper &raquo; Comments Feed" href="https://blog.acolyer.org/comments/feed/" />
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+			<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s1.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1488818651h&ver=4.7.5"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='all-css-0-1' href='https://s0.wp.com/_static/??-eJyNkOFuwjAMhF9oWVSYNvUH4lnSYIIhjq3aperbLx0aYhuK9ie6i+6zc/GzuMjFoJinyUmeEhb1s0Qmp4QZll/uNaq++OdYxguoP4NJiBf35VpxLEcsaMtd/CtsJ6C6RabBXzFhDiVCC4w8Qr0nCbYmCA4YINcZxVoYyfs3tcpTbdQsc/ukYZARVF09CSdyt8f+4Z518GpLbjaZ8ZDA1BuLE9aqHhD0hQ0rpXfRmpWAXeYYDLn8MO6YA44tdIQhc6oy+Zp6sCu0p1331nf9dvPR9edPNx/k1w==' type='text/css' media='all' />
+<link rel='stylesheet' id='print-css-1-1' href='https://s0.wp.com/wp-content/mu-plugins/global-print/global-print.css?m=1465851035h' type='text/css' media='print' />
+<link rel='stylesheet' id='all-css-2-1' href='https://s2.wp.com/_static/??/wp-content/mu-plugins/actionbar/actionbar.css,/wp-content/themes/h4/global.css?m=1490786585j' type='text/css' media='all' />
+<script type='text/javascript' src='https://s1.wp.com/_static/??-eJyF0G0KwjAMBuAL2dXJxP0Rz1Lr60hdP2zaDT29FSYiVIVAIHkISeQcBDk95hNYmhLXjHhbUmN4JX8BYWmIKqGx5F5Ye5fg0tNaf6QRIjOiGkqtDDr7iguekwVzQZXu50rkJsL8lxmkoPRFRDDdUTuEw3vn7x9Y1MHu267fbfp2263NA675cvs='></script>
+<link rel='stylesheet' id='all-css-0-2' href='https://s1.wp.com/wp-content/mu-plugins/highlander-comments/style.css?m=1377793621h' type='text/css' media='all' />
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='https://s1.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563h&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://adriancolyer.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress.com" />
+<link rel='shortlink' href='http://wp.me/1AZzO' />
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="the morning paper" />
+<meta property="og:description" content="an interesting/influential/important paper from the world of CS every weekday morning, as selected by Adrian Colyer" />
+<meta property="og:url" content="https://blog.acolyer.org/" />
+<meta property="og:site_name" content="the morning paper" />
+<meta property="og:image" content="https://secure.gravatar.com/blavatar/09326a066a08237015d6b84f026d36ae?s=200&amp;ts=1496057205" />
+<meta property="og:image:width" content="200" />
+<meta property="og:image:height" content="200" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:site" content="@wordpressdotcom" />
+<link rel="shortcut icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/09326a066a08237015d6b84f026d36ae?s=32" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/09326a066a08237015d6b84f026d36ae?s=32" sizes="16x16" />
+<link rel="apple-touch-icon-precomposed" href="https://secure.gravatar.com/blavatar/09326a066a08237015d6b84f026d36ae?s=114" />
+<link rel='openid.server' href='https://adriancolyer.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='https://adriancolyer.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="https://blog.acolyer.org/osd.xml" title="the morning paper" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+		<style id="wpcom-hotfix-masterbar-style">
+			@media screen and (min-width: 783px) {
+				#wpadminbar .quicklinks li#wp-admin-bar-my-account.with-avatar > a img {
+					margin-top: 5px;
+				}
+			}
+		</style>
+
+	<meta name="application-name" content="the morning paper" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="an interesting/influential/important paper from the world of CS every weekday morning, as selected by Adrian Colyer" /><meta name="msapplication-task" content="name=Subscribe;action-uri=https://blog.acolyer.org/feed/;icon-uri=https://secure.gravatar.com/blavatar/09326a066a08237015d6b84f026d36ae?s=16" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="title" content="the morning paper on WordPress.com" />
+<meta name="description" content="an interesting/influential/important paper from the world of CS every weekday morning, as selected by Adrian Colyer" />
+	<style type="text/css">
+				#title a { color: #444444 }
+		</style>
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+<style type="text/css" id="custom-colors-css">.comments a{background-image:none;padding-left:0}body{color:#333}.categories a:link,.categories a:visited{color:#333}#nav li a{color:#333}#footer{color:#333}#description h2{color:#333}.post .date,.comments,.meta,.categories{color:#333}.meta a:link,.meta a:visited{color:#333}#footer a:link,#footer a:visited{color:#333}.sticky .entry{background-color:#eee}.sticky .entry{background-color:rgba(238,238,238,.1)}#footer{border-color:#6d6d6d}body{background-color:#fff}.post-header,.post-footer{border-color:#fff}#header{border-color:#b7b7b7}a:hover{color:#772124}#header #title a:hover{color:#772124}#nav ul li a:hover,#nav ul li:hover>a,#nav ul li.current_page_item>a,#nav ul li.current_page_parent>a,#nav ul li.current_page_ancestor>a,#nav ul li.current-cat>a,#nav ul li.current-menu-ancestor>a,#nav ul li.current-menu-item>a,#nav ul li.current-menu-parent a{color:#772124}#nav ul li a:hover,#nav ul li:hover>a,#nav ul li.current_page_item>a,#nav ul li.current_page_parent>a,#nav ul li.current_page_ancestor>a,#nav ul li.current-cat>a,#nav ul li.current-menu-ancestor>a,#nav ul li.current-menu-item>a,#nav ul li.current-menu-parent a{border-top-color:#772124}.post-header h1 a:hover,.post-header h2 a:hover{color:#772124}.meta a:hover{color:#772124}.comments a:hover{color:#772124}.categories a:hover{color:#772124}span.asterisk{color:#772124}#footer a:hover{color:#772124}a:link,a:visited{color:#772124}.post-header h1 a:link,.post-header h1 a:visited,.post-header h2 a:link,.post-header h2 a:visited{color:#772124}#title a{color:#772124}</style>
+		<link rel="stylesheet" id="custom-css-css" type="text/css" href="https://s2.wp.com/?custom-css=1&#038;csblog=1AZzO&#038;cscache=6&#038;csrev=6" />
+		</head>
+<body class="home blog paged paged-15 mp6 customizer-styles-applied vigilance-light highlander-enabled highlander-light custom-colors infinite-scroll neverending">
+	<div class="skip-content"><a href="#content">Skip to content</a></div>
+	<div id="wrapper">
+				<div id="header" class="clear">
+			<h1 id="title"><a href="https://blog.acolyer.org"><span>the morning paper</span></a></h1>			<div id="description">
+				<h2>an interesting/influential/important paper from the world of CS every weekday morning, as selected by Adrian Colyer</h2>
+			</div><!--end description-->
+			<div id="nav">
+					<ul class="menu">
+		<li class="page_item current_page_item"><a href="https://blog.acolyer.org">Home</a></li>
+				<li class="page_item page-item-2"><a href="https://blog.acolyer.org/about/">About</a></li>
+<li class="page_item page-item-406"><a href="https://blog.acolyer.org/email-subs/">Subscribe</a></li>
+	</ul>
+			</div><!--end nav-->
+		</div><!--end header-->
+		<div id="content" class="pad">
+
+<div id="post-3417" class="post-3417 post type-post status-publish format-standard hentry category-machine-learning">
+	<div class="post-header">
+		<h2><a href="https://blog.acolyer.org/2017/01/03/matching-networks-for-one-shot-learning/" rel="bookmark">Matching networks for one shot&nbsp;learning</a></h2>
+		<div class="date">January 3, 2017</div>
+	</div><!--end post header-->
+	<div class="meta clear">
+		<div class="tags"></div>
+		<div class="author">
+					</div>
+	</div><!--end meta-->
+	<div class="entry clear">
+				<p><a href="https://arxiv.org/pdf/1606.04080v1.pdf">Matching networks for one shot learning</a> Vinyals et al. (Google DeepMind), <em>NIPS 2016</em></p>
+<p>Yesterday we saw a neural network that can learn basic Newtonian physics. On reflection that&#8217;s not totally surprising since we know that <a href="https://blog.acolyer.org/2016/10/05/why-does-deep-and-cheap-learning-work-so-well/">deep networks are very good at learning functions of the kind that describe our natural world</a>. Alongside an intuitive understanding of physics, the authors of &#8220;<a href="https://blog.acolyer.org/2016/11/25/building-machines-that-learn-and-think-like-people/">Building machines that learn and think like people</a>&#8221; also called out <em>one-shot</em> learning as a capability which humans have and which machine learning systems struggle with. Today&#8217;s paper choice sees the Google DeepMind team take on that challenge:</p>
+<blockquote><p>
+  Learning from a few examples remains a key challenge in machine learning. Despite recent advances in important domains such as vision and language, the standard supervised deep learning paradigm does not offer a satisfactory solution for learning new concepts from little data.
+</p></blockquote>
+<p>Suppose I say to you &#8220;a Rebra is a Zebra but with red and white stripes,&#8221; and then show you a sample image. You&#8217;d then be able to tell me which other pictures had Rebras in them. The one-shot learning challenge is similar: the system is shown a <em>single labelled example</em> and from this it should be able to learn to detect other examples of the same class.</p>
+<p>Deep learning isn&#8217;t very good at this &#8211; it needs lots of examples to drive lots of iterations of stochastic gradient descent and gradually refine the weights in the model. In contrast, something like k-nearest neighbours (KNN) doesn&#8217;t require any training at all. Suppose we see only 1 example of a class as in one-shot learning. If we used  1-NN and thus predicted the class of a previously unseen input as its nearest neighbour we&#8217;d have a basic system. Unfortunately it probably wouldn&#8217;t work very well in the real world, and we still have the problems of learning a good feature representation and choosing an appropriate distance function.</p>
+<p>The <em>Matching Nets</em> architecture described in this paper blends these two extremes, using neural networks augmented with memory (as we saw for example in <a href="https://blog.acolyer.org/2016/03/10/memory-networks/">Memory Networks</a> and the <a href="https://blog.acolyer.org/2016/03/09/neural-turing-machines">Neural Turing Machine</a>). In these models there is some external memory and an <em>attention mechanism</em> which is used to access the memory. It&#8217;s a network that <em>learns how to learn a classifier</em> from only a very small number of examples…</p>
+<p>A matching network is shown a support set <em>S</em> of <em>k</em> labelled examples with input <em>x</em> and label <em>y</em> : <img src="https://s0.wp.com/latex.php?latex=%5C%7Bx_i%2C+y_i%5C%7D_%7Bi%3D1%7D%5E%7Bk%7D&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="&#92;{x_i, y_i&#92;}_{i=1}^{k}" title="&#92;{x_i, y_i&#92;}_{i=1}^{k}" class="latex" />. Given a new example <img src="https://s0.wp.com/latex.php?latex=%5Chat%7Bx%7D&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="&#92;hat{x}" title="&#92;hat{x}" class="latex" /> we want to know the probability that it is an instance of a given class: <img src="https://s0.wp.com/latex.php?latex=P%28%5Chat%7By%7D%7C%5Chat%7Bx%7D%2C+S%29&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="P(&#92;hat{y}|&#92;hat{x}, S)" title="P(&#92;hat{y}|&#92;hat{x}, S)" class="latex" />. The probability function <em>P</em> is parameterised by a neural network. Given such a function, predicting the output class becomes as simple as <img src="https://s0.wp.com/latex.php?latex=argmax_y+P%28y%7C%5Chat%7Bx%7D%2C+S%29&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="argmax_y P(y|&#92;hat{x}, S)" title="argmax_y P(y|&#92;hat{x}, S)" class="latex" />. In plain English, predict the output class with the highest probability.  So far, this reads pretty much like a mathematical redefinition of the problem.  The secret lies in how <em>P</em> is formulated. Given an input <img src="https://s0.wp.com/latex.php?latex=%5Chat%7Bx%7D&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="&#92;hat{x}" title="&#92;hat{x}" class="latex" />, a matching network model computes the estimated output label <img src="https://s0.wp.com/latex.php?latex=%5Chat%7By%7D&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="&#92;hat{y}" title="&#92;hat{y}" class="latex" /> as follows:</p>
+<p><img src="https://s0.wp.com/latex.php?latex=%5Chat%7By%7D+%3D+%5Csum_%7Bi%3D1%7D%5E%7Bk%7D+a%28%5Chat%7Bx%7D%2C+x_i%29y_i&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="&#92;hat{y} = &#92;sum_{i=1}^{k} a(&#92;hat{x}, x_i)y_i" title="&#92;hat{y} = &#92;sum_{i=1}^{k} a(&#92;hat{x}, x_i)y_i" class="latex" />   (1)</p>
+<p>Here <img src="https://s0.wp.com/latex.php?latex=a&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="a" title="a" class="latex" /> is an attention mechanism and its role is to specify how similar <img src="https://s0.wp.com/latex.php?latex=%5Chat%7Bx%7D&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="&#92;hat{x}" title="&#92;hat{x}" class="latex" /> is to <img src="https://s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="x" title="x" class="latex" />. Think of it as a kind of fuzzy associative memory from <img src="https://s0.wp.com/latex.php?latex=x_i+%5Cmapsto+y_i&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="x_i &#92;mapsto y_i" title="x_i &#92;mapsto y_i" class="latex" />. Note that <img src="https://s0.wp.com/latex.php?latex=%5Chat%7By%7D&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="&#92;hat{y}" title="&#92;hat{y}" class="latex" /> is a linear combination of the labels in the support set (we sum over all examples, i = 1..k). What does it mean to take a linear combination of labels? I.e., what is 0.7 x cat + 0.2 x dog ??  It took me a good while to figure that out &#8211;  my interpretation is that the input <img src="https://s0.wp.com/latex.php?latex=y_i&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="y_i" title="y_i" class="latex" /> must be one-hot vectors, in which case we end up with a probability distribution over labels again (0.7 x [0,1] + 0.2 x [1.0]). Thanks to Oriol Vinyals (the first author) for subsequently confirming on twitter that this is indeed the case! Obvious with hindsight…</p>
+<p>For the attention mechanism itself, the authors use the cosine distance between <img src="https://s0.wp.com/latex.php?latex=%5Chat%7Bx%7D&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="&#92;hat{x}" title="&#92;hat{x}" class="latex" /> and <img src="https://s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="x" title="x" class="latex" />, passed through a softmax (to normalise distances between 0 and 1). We also need to map (lift) from the input space to the feature space in which we will do the distance comparisons. Functions <em>f</em> and <em>g</em> can do that for us.</p>
+<p>Plugging into the softmax formula:</p>
+<p><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e348290cf48ddbb6e9a6ef4e39363568b67c09d3" alt="" /></p>
+<p>we get</p>
+<p><img src="https://adriancolyer.files.wordpress.com/2016/12/one-shot-attn.png?w=600" alt="one-shot-attn" /></p>
+<p>At this point a picture is probably very helpful:</p>
+<p><img src="https://adriancolyer.files.wordpress.com/2016/12/one-shot-fig-1.png?w=600" alt="one-shot-fig 1" /></p>
+<p>You&#8217;re probably wondering why we use different embedding functions for <img src="https://s0.wp.com/latex.php?latex=%5Chat%7Bx%7D&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="&#92;hat{x}" title="&#92;hat{x}" class="latex" /> and <img src="https://s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="x" title="x" class="latex" /> since they&#8217;re both of the same type (e.g., both images).  The function <em>g</em> (for embedding the examples from S) takes the full set <em>S</em> in addition to the element <em>x</em> , i.e., it becomes <img src="https://s0.wp.com/latex.php?latex=g%28x_i%2C+S%29&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="g(x_i, S)" title="g(x_i, S)" class="latex" />. This is done to allow <em>g</em> to modify the way it embeds <img src="https://s0.wp.com/latex.php?latex=x_i&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="x_i" title="x_i" class="latex" /> based on what else is in the set &#8211; for example, there might be some other <img src="https://s0.wp.com/latex.php?latex=x_j&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="x_j" title="x_j" class="latex" /> very close to it. The encoding function <em>g</em> is modelled as a bidirectional LSTM. In a similar manner <em>f</em> is also passed the whole set <em>S</em> and can use that knowledge to change how it encodes <img src="https://s0.wp.com/latex.php?latex=%5Chat%7Bx%7D&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="&#92;hat{x}" title="&#92;hat{x}" class="latex" />.</p>
+<h2>You get good at what you practice</h2>
+<p>If you want to become good at learning a classifier given only a very small number of examples, then it makes sense to train that way!</p>
+<p>To train a matching net, first sample a small number of labels (e.g., the set {cats, dogs}), and then sample a support set <em>S</em> with a small number of examples per label (e.g. 1-5), and a batch <em>B</em> to be used to training.</p>
+<blockquote><p>
+  The Matching Net is then trained to minimise the error predicting the labels in the batch B conditioned on the support set S. This is a form of meta-learning since the training procedure explicitly learns to learn from a given support set to minimise a loss over a batch.
+</p></blockquote>
+<h2>Experiments</h2>
+<p>Matching Networks were tested on a number of <em>N</em>-way (<em>N</em> labels/classes), <em>k</em>-shot (<em>k</em> examples per class) learning tasks. Data sets were drawn from the Omniglot and ImageNet image data sets, and the Penn Treebank language modelling data set.</p>
+<p>Omniglot contains 1623 characters from 50 different alphabets, each hand-drawn by 20 different people. A CNN was used as the embedding function. In both 1-shot and 5-shot, 5-way and 20-way tests, Matching Networks outperform a baseline of the state-of-the-art MANN classifier, as well as a Convolutional Siamese Net (neither of these were designed for one-shot learning of course).</p>
+<p><img src="https://adriancolyer.files.wordpress.com/2016/12/img_0100.jpeg?w=600" alt="https://adriancolyer.files.wordpress.com/2016/12/img&#095;0100.jpeg" /></p>
+<p>A variety of experiments were performed with the ImageNet dataset. The miniImageNet test used 60,000 images with 100 classes, each having 600 examples. 80 classes were used for training, and testing was done on the other 20. Here are a couple of examples of Matching Networks classifying in a 5-way test (vs the Inception baseline):</p>
+<p><img src="https://adriancolyer.files.wordpress.com/2016/12/img_0102.jpeg?w=600" alt="https://adriancolyer.files.wordpress.com/2016/12/img&#095;0102.jpeg" /></p>
+<p>Here are the detailed results:</p>
+<p><img src="https://adriancolyer.files.wordpress.com/2016/12/img_0101.jpeg?w=600" alt="https://adriancolyer.files.wordpress.com/2016/12/img&#095;0101.jpeg" /></p>
+<p>Note the row labelled &#8216;FCE&#8217;, which stands for &#8216;Full Contextual Embedding&#8217; (i.e., passing <em>S</em> into <em>g</em> and <em>f</em>) &#8211; which turns out to be worth about 2 percentage points for one-shot learning on this task.</p>
+<p>The language task is to take a query sentence with a missing word, and predict the missing word (class). The support set contains sentences with a missing word and corresponding label for the missing word. An LSTM oracle which sees all the data (i.e., is not one-shot) defined an upper bound for this task of 72.8% accuracy. Matching Networks achieved 32.4%, 36.1%, and 38.2% accuracy with <em>k</em> = 1, 2, 3.</p>
+<blockquote><p>
+  In this paper we introduced Matching Networks, a new neural architecture that, by way of its corresponding training regime, is capable of state-of-the-art performance on a variety of one-shot classification tasks. There are a few key insights in this work. Firstly, one-shot learning is much easier if you train the network to do one-shot learning. Secondly, non-parametric structures in a neural network make it easier for networks to remember and adapt to new training sets in the same tasks.
+</p></blockquote>
+<p>(Non-parametric here is referring to the use of the memory, as opposed to having to try and encode everything that has been seen solely in trained weights).</p>
+					</div><!--end entry-->
+	<div class="post-footer">
+		<div class="comments"><a href="https://blog.acolyer.org/2017/01/03/matching-networks-for-one-shot-learning/#comments">2 Comments</a></div>
+		<div class="categories">from &rarr; <a href="https://blog.acolyer.org/category/machine-learning/" rel="category tag">Machine Learning</a></div>
+	</div><!--end post footer-->
+</div><!--end post-->
+<div id="post-3361" class="post-3361 post type-post status-publish format-standard hentry category-machine-learning">
+	<div class="post-header">
+		<h2><a href="https://blog.acolyer.org/2017/01/02/interaction-networks-for-learning-about-objects-relations-and-physics/" rel="bookmark">Interaction networks for learning about objects, relations and&nbsp;physics</a></h2>
+		<div class="date">January 2, 2017</div>
+	</div><!--end post header-->
+	<div class="meta clear">
+		<div class="tags"></div>
+		<div class="author">
+					</div>
+	</div><!--end meta-->
+	<div class="entry clear">
+				<p><a href="https://arxiv.org/pdf/1612.00222v1.pdf">Interaction networks for learning about objects, relations and physics</a> <em>Google DeepMind, NIPS 2016</em></p>
+<p><em>Welcome back! There were so many great papers from OSDI &#8217;16 to cover at the end of last year that I didn&#8217;t have a chance to get to NIPS. I&#8217;m kicking off this year therefore with a few of the Google DeepMind papers from NIPS &#8217;16 in December.</em></p>
+<p>Last year we looked at ‘<a href="https://blog.acolyer.org/2016/11/25/building-machines-that-learn-and-think-like-people/">Building machines that learn and think like people</a>’ which talked about some of the important differences between how computers learn and how humans learn. In particular, machine learning is anchored in statistical pattern recognition whereas we conjecture that humans learn by building models of the world that we reason over. An intuitive understanding of basic physics begins to develop in humans from about 2 months old: solidity, continuity, paths of motion, and so on. In ’<a href="https://blog.acolyer.org/2016/10/12/towards-deep-symbolic-reinforcement-learning/">Towards deep symbolic reinforcement learning’</a>, Garnelo et al. argue for a combination of deep learning and symbolic reasoning to accommodate this kind of knowledge. In today’s paper, the Google DeepMind team demonstrate a pure deep learning approach to learning a physics engine…</p>
+<blockquote><p>
+  Reasoning about objects, relations, and physics is central to human intelligence, and a key goal of artificial intelligence…
+</p></blockquote>
+<p><em>Interaction networks</em> deal with <em>objects</em> and the <em>relations</em> between them. An object-centric model learns the behaviour of individual objects and the aggregated effects of the interactions they participate in. A relation-centric model learns the behaviours of two or more interacting objects. The input to an interaction network is a graph of objects and the relations between them (learning that graph from visual representations of a scene is a separate challenge!).</p>
+<blockquote><p>
+  Decomposing complex systems into objects and relations, and reasoning about them explicitly, provides for combinatorial generalisation to novel contexts, one of the most important future challenges for AI, and a crucial step toward closing the gap between how humans and machines think.
+</p></blockquote>
+<p>In the sections that follow we’ll look at : (a) the abstract structure of an interaction network (IN) &#8211; i.e., how it models the real world; (b) an embodiment of INs using deep neural network building blocks; and (c) examples of the kind of things that INs were able to learn during evaluation.</p>
+<h3>The Interaction Network (IN) model</h3>
+<p><img src="https://adriancolyer.files.wordpress.com/2016/12/img_0097.jpeg?w=600" alt="" /></p>
+<p>Let <img src="https://s0.wp.com/latex.php?latex=o_t&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="o_t" title="o_t" class="latex" /> represent the state of object <img src="https://s0.wp.com/latex.php?latex=o&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="o" title="o" class="latex" /> at time <img src="https://s0.wp.com/latex.php?latex=t&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="t" title="t" class="latex" />.</p>
+<p>Now consider a directed relationship <img src="https://s0.wp.com/latex.php?latex=r&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="r" title="r" class="latex" /> between two objects <img src="https://s0.wp.com/latex.php?latex=o_1&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="o_1" title="o_1" class="latex" /> and <img src="https://s0.wp.com/latex.php?latex=o_2&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="o_2" title="o_2" class="latex" />. This could be for example a fixed object attached by a spring to a freely moving second object. Let <img src="https://s0.wp.com/latex.php?latex=f_R&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="f_R" title="f_R" class="latex" /> be a <em>relation-centric</em> function that takes as input two objects and the relation between them, and returns the <em>effect</em> of the interaction, <img src="https://s0.wp.com/latex.php?latex=e_%7Bt%2B1%7D&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="e_{t+1}" title="e_{t+1}" class="latex" />.</p>
+<p><img src="https://s0.wp.com/latex.php?latex=e_%7Bt%2B1%7D+%3D+f_R%28o_%7B1%2C+t%7D%2C+o_%7B2%2Ct%7D%29&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="e_{t+1} = f_R(o_{1, t}, o_{2,t})" title="e_{t+1} = f_R(o_{1, t}, o_{2,t})" class="latex" /></p>
+<p>Let <img src="https://s0.wp.com/latex.php?latex=f_O&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="f_O" title="f_O" class="latex" /> be an <em>object-centric</em> function that takes as input the state of an object at time <img src="https://s0.wp.com/latex.php?latex=o_t&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="o_t" title="o_t" class="latex" /> together with any predicted effect on the state of the object at time <img src="https://s0.wp.com/latex.php?latex=t%2B1&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="t+1" title="t+1" class="latex" />, <img src="https://s0.wp.com/latex.php?latex=e_%7Bt%2B1%7D&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="e_{t+1}" title="e_{t+1}" class="latex" />, and outputs the state of the object at time <img src="https://s0.wp.com/latex.php?latex=t%2B1&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="t+1" title="t+1" class="latex" />, <img src="https://s0.wp.com/latex.php?latex=o_%7Bt%2B1%7D&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="o_{t+1}" title="o_{t+1}" class="latex" />.</p>
+<p><img src="https://s0.wp.com/latex.php?latex=o_%7Bt%2B1%7D+%3D+f_O%28o_t%2C+e_%7Bt%2B1%7D%29&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="o_{t+1} = f_O(o_t, e_{t+1})" title="o_{t+1} = f_O(o_t, e_{t+1})" class="latex" /></p>
+<p>A system with many objects and relations between them can be represented by a graph <img src="https://s0.wp.com/latex.php?latex=G+%3D+&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="G = " title="G = " class="latex" /> The relations themselves may have attributes.</p>
+<p>The final input to the system is <img src="https://s0.wp.com/latex.php?latex=X&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="X" title="X" class="latex" />, representing external effects such as active control inputs or gravitational acceleration which are applied to each object separately.</p>
+<p>A basic interaction network function is then defined as:</p>
+<p><img src="https://s0.wp.com/latex.php?latex=IN%28G%29+%3D+%5Cphi_O%28a%28G%2C+X%2C+%5Cphi_R%28m%28G%29%29%29%29&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="IN(G) = &#92;phi_O(a(G, X, &#92;phi_R(m(G))))" title="IN(G) = &#92;phi_O(a(G, X, &#92;phi_R(m(G))))" class="latex" /></p>
+<p>That might look complicated at first glance, but all it really says is first apply the relation function <img src="https://s0.wp.com/latex.php?latex=f_R&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="f_R" title="f_R" class="latex" /> to all <img src="https://s0.wp.com/latex.php?latex=%28o_i%2Co_j%2Cr_k%29&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="(o_i,o_j,r_k)" title="(o_i,o_j,r_k)" class="latex" /> tuples, and then aggregate (that’s the function <img src="https://s0.wp.com/latex.php?latex=a&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="a" title="a" class="latex" /> in the above) all of the effects that apply to each receiver object and combine them with any effects due to <img src="https://s0.wp.com/latex.php?latex=X&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="X" title="X" class="latex" />. Finally apply the object function <img src="https://s0.wp.com/latex.php?latex=f_O&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="f_O" title="f_O" class="latex" /> to each object together with the result of the effect aggregation step for that object.</p>
+<p>This is represented visually in the figure at the start of this section.</p>
+<h3>A learnable implementation of an IN</h3>
+<blockquote><p>
+  The general definition of the IN in the previous section is agnostic to the choice of functions and algorithms, but we now outline a learnable implementation capable of reasoning about complex systems with nonlinear relations and dynamics. We use standard deep neural network building blocks, multilayer perceptrons (MLP), matrix operations, etc., which can be trained efficiently from data using gradient-based optimisation, such as stochastic gradient descent.
+</p></blockquote>
+<p>If each object has a state vector of length <img src="https://s0.wp.com/latex.php?latex=D_s&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="D_s" title="D_s" class="latex" />, and there are <img src="https://s0.wp.com/latex.php?latex=N_o&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="N_o" title="N_o" class="latex" /> objects, then O is represented as a <img src="https://s0.wp.com/latex.php?latex=D_s+%5Ctimes+N_o&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="D_s &#92;times N_o" title="D_s &#92;times N_o" class="latex" /> matrix.</p>
+<p>Relationships are represented by three matrices: <img src="https://s0.wp.com/latex.php?latex=R_r&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="R_r" title="R_r" class="latex" /> is a binary vector whose <img src="https://s0.wp.com/latex.php?latex=j%5E%7Bth%7D&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="j^{th}" title="j^{th}" class="latex" /> column is a one-hot vector indicating the receiver object of the <img src="https://s0.wp.com/latex.php?latex=j%5E%7Bth%7D&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="j^{th}" title="j^{th}" class="latex" /> relation; <img src="https://s0.wp.com/latex.php?latex=R_s&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="R_s" title="R_s" class="latex" /> similarly identifies sender objects. The final matrix, <img src="https://s0.wp.com/latex.php?latex=R_a&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="R_a" title="R_a" class="latex" /> encodes the attributes of each relationship.</p>
+<p>The functions <img src="https://s0.wp.com/latex.php?latex=f_R&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="f_R" title="f_R" class="latex" /> and <img src="https://s0.wp.com/latex.php?latex=f_O&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="f_O" title="f_O" class="latex" /> are both encoded as multilayer perceptrons. The aggregation function <img src="https://s0.wp.com/latex.php?latex=a&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="a" title="a" class="latex" /> is implemented as a matrix product.</p>
+<blockquote><p>
+  Training an IN requires optimizing an objective function over the learnable parameters of <img src="https://s0.wp.com/latex.php?latex=%5Cphi_R&#038;bg=e7e6e2&#038;fg=333333&#038;s=0" alt="&#92;phi_R" title="&#92;phi_R" class="latex" /> and <img src="https://s0.wp.com/latex.php?latex=%5Cphi_O&#038;bg=e7e6e2&#038;fg=333333&#038;s=0" alt="&#92;phi_O" title="&#92;phi_O" class="latex" />. Note, <img src="https://s0.wp.com/latex.php?latex=m&#038;bg=e7e6e2&#038;fg=333333&#038;s=0" alt="m" title="m" class="latex" /> and <img src="https://s0.wp.com/latex.php?latex=a&#038;bg=e7e6e2&#038;fg=333333&#038;s=0" alt="a" title="a" class="latex" /> involve matrix operations that do not contain learnable parameters.
+</p></blockquote>
+<p>For the evaluation, the best model architecture for the MLPs was selected by a grid search over layer sizes and depths. The <img src="https://s0.wp.com/latex.php?latex=f_R&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="f_R" title="f_R" class="latex" /> MLP applied to each column had four 150-length hidden layers of linear transforms plus biases, followed by rectified linear units (ReLUs), and a output layer of length 50 that was a linear transformation plus bias. The <img src="https://s0.wp.com/latex.php?latex=f_O&#038;bg=ffffff&#038;fg=333333&#038;s=0" alt="f_O" title="f_O" class="latex" /> MLP had one 100-length hidden layer and output length 2, targeting the <em>x,y</em> velocity.</p>
+<h3>How well does it learn?</h3>
+<p>The experiments involved predicting future states of systems and estimating their abstract properties (potential energy).</p>
+<blockquote><p>
+  We evaluated the IN’s ability to learn to make these judgments in three complex physical domains: n-body systmems; balls bouncing in a box; and strings composed of springs that collide with rigid objects.
+</p></blockquote>
+<p>In the figure below we see 1000 rollout steps for n-body, bouncing ball, and string problems. On the left in each case are the trajectories from a physics engine simulation, and on the right the predictions of the IN model.</p>
+<p><img src="https://adriancolyer.files.wordpress.com/2016/12/img_0098.jpeg?w=600" alt="" title="Interaction Network evaluation" /></p>
+<blockquote><p>
+  Our results shown that the IN can predict the next-step dynamics of our task domains very accurately after training… We also found that the IN trained on single-step predictions can be used to simulate trajectories over thousands of steps very effectively, often tracking the ground truth closely, especially in the n-body and string domains.
+</p></blockquote>
+<p>Where results do differ, this can be (partially?) attributed to the highly non-linear dynamics in which imperceptible prediction errors by the model can lead to large differences in system state. Such incoherent rollouts however remain consistent with our understanding of the domains.</p>
+<h3>What does it all mean?</h3>
+<blockquote><p>
+  Our results provide surprisingly strong evidence of IN’s ability to learn accurate physical simulations and generalize their training to novel systems with different numbers and configurations of objects and relations… Our interaction network implementation is the first learnable physics engine than can scale up to real-world problems, and is a promising template for new AI approaches to reasoning about other physical and mechanical systems, scene understanding, social perception, hierarchical planning, and analogical reasoning.
+</p></blockquote>
+<p>Now we just need to bolt-on a perceptual front-end that can infer objects and relations from raw observations!</p>
+					</div><!--end entry-->
+	<div class="post-footer">
+		<div class="comments"><a href="https://blog.acolyer.org/2017/01/02/interaction-networks-for-learning-about-objects-relations-and-physics/#comments">8 Comments</a></div>
+		<div class="categories">from &rarr; <a href="https://blog.acolyer.org/category/machine-learning/" rel="category tag">Machine Learning</a></div>
+	</div><!--end post footer-->
+</div><!--end post-->
+<div id="post-3489" class="post-3489 post type-post status-publish format-standard hentry category-uncategorized">
+	<div class="post-header">
+		<h2><a href="https://blog.acolyer.org/2017/01/01/welcome-to-2017/" rel="bookmark">Welcome to 2017</a></h2>
+		<div class="date">January 1, 2017</div>
+	</div><!--end post header-->
+	<div class="meta clear">
+		<div class="tags"></div>
+		<div class="author">
+					</div>
+	</div><!--end meta-->
+	<div class="entry clear">
+				<p>A big thank you to those of you who have been following the blog for some time now, and welcome to all of you joining for the first time in 2017!</p>
+<p>I spent the holiday break fine-tuning my writing and publishing process. The biggest difference regular readers will notice is that I&#8217;ve figured out a way to keep writing in Markdown, but have LaTeX math rendered in the blog as well as in the email newsletter (where I can&#8217;t rely on the MathJax.js library for most email clients). Previously I&#8217;ve been writing math expressions using plain HTML, which gets quite tedious, and also makes it hard to include some formulas! The LaTeX version looks much better, especially on the blog site.</p>
+<p>If you can see this expression, then everything is working as it should:</p>
+<p><img src="https://s0.wp.com/latex.php?latex=b+%3E+%5Csum_%7Bi%3D1%7D%5E%7Bn%7D+x_i&#038;bg=ffffff&#038;fg=333333&#038;s=2" alt="b &gt; &#92;sum_{i=1}^{n} x_i" title="b &gt; &#92;sum_{i=1}^{n} x_i" class="latex" /></p>
+<p>(For the newsletter edition, I&#8217;m rendering the Markdown to HTML via pandoc using the codecogs LaTex math renderer which turns expressions into images. These don&#8217;t look as crisp as the MathJax versions on the blog itself, but are still better than what we had before. It does mean you&#8217;ll need to show images when viewing The Morning Paper emails, but you probably needed to do that anyway for most of the paper reviews).</p>
+<p>Anyway, enough about the process and onto the content!</p>
+<p>Last month was the NIPS 2016 conference &#8211; a big event in the ML calendar &#8211; and the Google DeepMind team were out in force. They even wrote a nice series of blog posts summarising the papers they were presenting at the conference (<a href="https://deepmind.com/blog/deepmind-papers-nips-part-1/">Part 1</a>, <a href="https://deepmind.com/blog/deepmind-papers-nips-part-2/">Part 2</a>, <a href="https://deepmind.com/blog/deepmind-papers-nips-part-3/">Part 3</a>). To kick things off for this year I&#8217;ve chosen five of those papers, four that in one way or another speak to some of the challenges we looked at last year in &#8220;<a href="https://blog.acolyer.org/2016/11/25/building-machines-that-learn-and-think-like-people/">Building machines that learn and think like people</a>&#8220;, and one that I can see having broad applicability over the next few years. Coming up this week on The Morning Paper:</p>
+<ul>
+<li>Humans gain an intuitive understanding of physics from a very early age. In &#8220;Interaction Networks for Learning about Objects, Relations and Physics&#8221; we will see that &#8216;Interaction Networks&#8217; can learn basic physics well enough to cope with complex simulations&#8230; all by themselves.</li>
+<li>Humans are able to learn from just a single example of a class, but neural networks need many many examples to train. &#8216;One shot learning&#8217; is the name given to the challenge of learning a classifier given just one example. In &#8216;Matching Networks for One Shot Learning&#8217; we&#8217;ll see the progress the DeepMind team have been able to make towards this goal.</li>
+<li>&#8220;Learning to learn by gradient descent by gradient descent&#8221; &#8211; in which the optimiser function for training a network is <em>itself</em> a learned function. Things go very meta&#8230;</li>
+<li>Given a network that can learn to do physical simulations when presented with objects and relationships between them as input, it would be nice if we could turn a 2D image into a 3D representation and infer 3D objects and relations. &#8220;Unsupervised learning of 3D structure from images&#8221; is a big step towards that goal.</li>
+<li>Humans make plans. The &#8216;Frostbite challenge&#8217; refers to the ATARI Frostbite game, and the difficulty of learning to play it well using reinforcement learning since it requires longer-range planning. In &#8220;Strategic Attentive Writer for Learning Macro-Actions&#8221; we see a deep network architecture capable of formulating and following plans in reinforcement learning scenarios.</li>
+</ul>
+<p>I&#8217;m no deep learning expert (<em>far</em> from it!), but I hope these will give you a small flavour of what&#8217;s becoming possible and how the field is evolving.</p>
+					</div><!--end entry-->
+	<div class="post-footer">
+		<div class="comments"><a href="https://blog.acolyer.org/2017/01/01/welcome-to-2017/#comments">2 Comments</a></div>
+		<div class="categories">from &rarr; <a href="https://blog.acolyer.org/category/uncategorized/" rel="category tag">Uncategorized</a></div>
+	</div><!--end post footer-->
+</div><!--end post-->
+<div id="post-3456" class="post-3456 post type-post status-publish format-standard hentry category-uncategorized">
+	<div class="post-header">
+		<h2><a href="https://blog.acolyer.org/2016/12/29/my-new-years-resolution-read-a-research-paper-every-weekday/" rel="bookmark">My New Year&#8217;s Resolution &#8211; read a research paper every&nbsp;(week)day</a></h2>
+		<div class="date">December 29, 2016</div>
+	</div><!--end post header-->
+	<div class="meta clear">
+		<div class="tags"></div>
+		<div class="author">
+					</div>
+	</div><!--end meta-->
+	<div class="entry clear">
+				<p>… and post a write-up on this blog.</p>
+<p>That sounds crazy of course &#8211; who has the time to read a paper every weekday? Let alone write it up! I&#8217;ve done it for each of the last two calendar years though, so I do have <em>some</em> reason to believe it might be possible ;).</p>
+<p><em>(Ok, technically it&#8217;s not quite every weekday &#8211; I take two weeks off from writing over Easter, four over the summer, and two weeks in December!)</em></p>
+<p>If you like the idea of being exposed to more research and cutting-edge ideas over 2017 but don&#8217;t think you can quite commit to reading a full paper every day then I invite you to follow along with this blog. You can also <a href="http://eepurl.com/bbzPm9">subscribe to the mailing list</a> if you prefer to have each day&#8217;s paper write-up delivered straight to your inbox for reading wherever you happen to be. Of course that means you&#8217;ll be exposed to <em>my</em> selections rather than choosing your own papers. For many readers it turns out, having someone else take on the burden of finding interesting papers in the first place is a bonus though, not a negative!</p>
+<p>The field of computer science is progressing at a gallop, and the only way to understand some of the frontiers is by following research. I&#8217;ve listed below some of the academic conferences I&#8217;ll be watching this coming year (together with their accompanying workshops). As usual, the plan is to cover a good mix of data, distributed systems, software engineering, security, and machine learning topics. As well as papers published in 2017, we&#8217;ll be dipping into some of the best from previous years as well &#8211; paper selection tends to wander through the year wherever my interests take me!</p>
+<p>In calendar order:<br />
+* <a href="http://cidrdb.org/cidr2017/">CIDR</a> (Conference on Innovative Data Systems Research)<br />
+* <a href="http://conf.researchr.org/home/POPL-2017">POPL</a> (Principles of Programming Languages)<br />
+* <a href="http://www.wsdm-conference.org/2017/">WSDM</a> (Web Search and Data Mining)<br />
+* <a href="https://www.usenix.org/conference/fast17">FAST</a> (File and Storage Technologies)<br />
+* <a href="http://www.internetsociety.org/events/ndss-symposium/ndss-symposium-2017">NDSS</a> (Network and Distributed System Security Symposium)<br />
+* <a href="http://www.codaspy.org/">CODASPY</a> (Conference on Data and Application Security and Privacy)<br />
+* <a href="https://www.usenix.org/conference/nsdi17">NSDI</a> (Networked Systems Design and Implementation)<br />
+* <a href="http://www.www2017.com.au/">WWW</a> (World Wide Web conference)<br />
+* <a href="http://asiaccs2017.com/">CCS</a> (ACM Conference on Computer and Communication Security. Link is to Asia edition, details of the main conference are not yet online &#8211; or not that I can find anyway…)<br />
+* <a href="http://novel.ict.ac.cn/ASPLOS2017/">ASPLOS</a> (Architectural Support for Programming Languages and Operating Systems)<br />
+* <a href="http://eurosys2017.org/">EuroSys</a> (Systems research and development)<br />
+* <a href="http://sigmod2017.org/">SIGMOD/PODS</a> (Management of Data / Principles of Database Systems)<br />
+* <a href="http://icse2017.gatech.edu/">ICSE</a> (International Conference on Software Engineering)<br />
+* <a href="http://www.ieee-security.org/TC/SP2017/">S&amp;P</a> (IEEE Symposium on Security and Privacy)<br />
+* <a href="https://icdcs2017.gatech.edu/">ICDCS</a> (International Conference on Distributed Computing Systems)<br />
+* <a href="http://conf.researchr.org/track/pldi-2017/pldi-2017-papers">PLDI</a> (Programming Language Design and Implemenation)<br />
+* <a href="http://2017.ecoop.org/">ECOOP</a> (European Conference on Object Oriented Programming)<br />
+* <a href="http://www.debs2017.org/">DEBS</a> (Distributed and Event-based Systems)<br />
+* <a href="http://www.hpdc.org/2017/">HPDC</a> (ACM Symposium on High-Performance Parallel and Distributed Computing)<br />
+* <a href="https://www.usenix.org/conference/hotcloud17">HotCloud</a> (Hot topics in Cloud Computing)<br />
+* <a href="https://www.usenix.org/conference/soups2017">SOUPS</a> (Symposium on Usable Privacy and Security)<br />
+* <a href="http://www.podc.org/">PODC</a> (Principles of Distributed Computing)<br />
+* <a href="https://2017.icml.cc/">ICML</a> (International Conference on Machine Learning)<br />
+* <a href="http://www.kdd.org/kdd2017/">KDD</a> (Knowledge Discovery and Data Mining)<br />
+* <a href="https://www.usenix.org/conference/usenixsecurity17">USENIX</a> Security Symposium<br />
+* <a href="https://www.usenix.org/conferences/byname/158">HotSec</a> (Hot topics in security)<br />
+* <a href="http://conferences.sigcomm.org/sigcomm/2017/">SIGCOMM</a> (Special Interest Group on Data Communication)<br />
+* <a href="http://www.vldb.org/2017/">VLDB</a> (International conference on Very Large Data Bases)<br />
+* <a href="http://ecmlpkdd2017.ijs.si/">ECML-PKDD</a> (European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases)<br />
+* <a href="http://acmsocc.github.io/2016/">SoCC</a> (ACM Symposium on Cloud Computing &#8211; link is to 2016 site, awaiting 2017 edition)<br />
+* <a href="http://2017.splashcon.org/">SPLASH</a> (Systems, Programming, Languages and Applications: Software for Humanity)<br />
+* <a href="https://www.sigops.org/sosp/sosp17/">SOSP</a> (ACM Symposium on Operating Systems Principles)<br />
+* <a href="http://icdm2017.bigke.org/">ICDM</a> (International Conference on Data Mining)<br />
+* <a href="https://nips.cc/Conferences/2017">NIPS</a> (Neural Information Processing Systems)<br />
+* <a href="https://middleware2017.github.io/">Middleware</a></p>
+<p>So much research, and only one of me! The list may look daunting, but if you&#8217;d like a broad exposure to the hot topics being discussed across all these conferences, all <em>you</em> have to do is subscribe to The Morning Paper!</p>
+					</div><!--end entry-->
+	<div class="post-footer">
+		<div class="comments"><a href="https://blog.acolyer.org/2016/12/29/my-new-years-resolution-read-a-research-paper-every-weekday/#comments">7 Comments</a></div>
+		<div class="categories">from &rarr; <a href="https://blog.acolyer.org/category/uncategorized/" rel="category tag">Uncategorized</a></div>
+	</div><!--end post footer-->
+</div><!--end post-->
+<div id="post-3343" class="post-3343 post type-post status-publish format-standard hentry category-uncategorized">
+	<div class="post-header">
+		<h2><a href="https://blog.acolyer.org/2016/12/19/so-that-was-2016/" rel="bookmark">So that was&nbsp;2016</a></h2>
+		<div class="date">December 19, 2016</div>
+	</div><!--end post header-->
+	<div class="meta clear">
+		<div class="tags"></div>
+		<div class="author">
+					</div>
+	</div><!--end meta-->
+	<div class="entry clear">
+				<p>It’s hard to believe that’s the year over already. I count 215 posts this year including this one &#8211; that’s a lot of papers!  I hope at least a few of them sparked your imagination. I don’t think many people read 200+ papers a year (especially outside of academia) &#8211; and even fewer are mad enough to try and write up notes on them!!  But by following this blog, you’ve still been able to take in a quick overview of a lot of research. It doesn’t matter if you don’t read every single post, but I do hope you dip into some of the papers I cover that are outside of your core areas of interest too.</p>
+<p>Clearly many of you like to have The Morning Paper delivered to your inbox. I don’t have time to do much other than focus on reading papers and producing the content, but <a href="http://eepurl.com/bbzPm9" title="Subscribe to The Morning Paper">The Morning Paper email list</a> still managed to double in size during 2016. The big investment in time is in reading the papers and writing the posts &#8211; sharing the wonderful stories contained in the papers with a wider audience comes essentially for free (well almost, MailChimp do like to charge me more as the list grows, but that’s a price I’m very happy to pay).</p>
+<p><em>If you’ve enjoyed The Morning Paper this year therefore, please help spread the word to your friends and colleagues whom you think might like it. If we all introduced just one extra person to the joys of good CS research, we could double the dissemination impact between us!</em></p>
+<p>The Morning Paper will be back for 2017 in just a couple of weeks, and I’m busy planning some of the content. In the meantime, here are some of the highlights from 2016 (5 per quarter):</p>
+<ul>
+<li><a href="%20A%20Transaction%20Recovery%20Method%20Supporting%20Fine-Granularity%20Locking%20and%20Partial%20Rollbacks">ARIES: A Transaction recovery method supporting fine-granularity locking and partial rollbacks</a></li>
+<li><a href="https://blog.acolyer.org/2016/01/14/no-compromises/">No compromises: Distributed transactions with consistency, availability, and performance</a></li>
+<li><a href="https://blog.acolyer.org/2016/02/11/fs-not-equal/">All file systems are not created equal: on the complexity of crafting crash consistent applications</a></li>
+<li><a href="https://blog.acolyer.org/2016/02/23/not-quite-so-broken-tls/">Not-quite-so-broken-tls: lessons in re-engineering a security protocol specification and implementation</a></li>
+<li><a href="https://blog.acolyer.org/2016/03/17/hyperloglog-in-practice-algorithmic-engineering-of-a-state-of-the-art-cardinality-estimation-algorithm/">HyperLogLog in practice: Algorithmic engineering of a state of the art cardinality estimation algorithm</a></li>
+<li><a href="https://blog.acolyer.org/2016/04/21/the-amazing-power-of-word-vectors/">The amazing power of word vectors</a></li>
+<li><a href="https://blog.acolyer.org/2016/04/18/deep-learning-in-neural-networks-an-overview/">Deep learning in neural network: an overview</a></li>
+<li><a href="https://blog.acolyer.org/2016/05/31/how-to-build-static-checking-systems-using-orders-of-magnitude-less-code/">How to build static checking systems using orders of magnitude less code</a></li>
+<li><a href="https://blog.acolyer.org/2016/05/03/gorilla-a-fast-scalable-in-memory-time-series-database/">Gorilla: A fast, scalable, in-memory time-series database</a></li>
+<li><a href="https://blog.acolyer.org/2016/06/28/a-survey-of-available-corpora-for-building-data-driven-dialogue-systems/">A survey of available corpora for building data-driven dialogue systems</a></li>
+<li><a href="https://blog.acolyer.org/2016/07/14/dbsherlock-a-performance-diagnostic-tool-for-transactional-databases/">DBSherlock: A performance diagnostic tool for transactional databases</a></li>
+<li><a href="https://blog.acolyer.org/2016/07/12/goods-organizing-googles-datasets/">Goods: Organizing Google’s datasets</a></li>
+<li><a href="https://blog.acolyer.org/2016/09/27/flexible-paxos-quorum-intersection-revisited/">Flexible Paxos: Quorum intersection revisited</a></li>
+<li><a href="https://blog.acolyer.org/2016/09/12/on-designing-and-deploying-internet-scale-services/">On designing and deploying internet scale services</a></li>
+<li><a href="https://blog.acolyer.org/2016/09/05/on-the-criteria-to-be-used-in-decomposing-systems-into-modules/">On the criteria to be used in decomposing systems into modules</a></li>
+<li><a href="https://blog.acolyer.org/2016/10/06/simple-testing-can-prevent-most-critical-failures/">Simple testing can prevent most critical failures</a></li>
+<li><a href="https://blog.acolyer.org/2016/10/12/towards-deep-symbolic-reinforcement-learning/">Towards deep symbolic reinforcement learning</a></li>
+<li><a href="https://blog.acolyer.org/2016/11/10/when-csi-meets-public-wifi-inferring-your-mobile-phone-password-via-wifi-signals/">When CSI meets public wifi: inferring your mobile phone password via wifi signals</a></li>
+<li><a href="https://blog.acolyer.org/2016/11/28/kraken-leveraging-live-traffic-tests-to-identify-and-resolve-resource-utilization-bottlenecks-in-large-scale-web-services/">Kraken: Leveraging live traffic tests to identify and resolve resource utilisation bottlenecks in large scale web services</a></li>
+<li><a href="https://blog.acolyer.org/2016/12/01/morpheus-towards-automated-slos-for-enterprise-clusters/">Morpheus: towards automated SLOs for enterprise clusters</a></li>
+</ul>
+<p>And oh so many more I wanted to put on that list!!</p>
+<p>What were <em>your</em> favourite papers / posts of 2016 and why? I’d love to hear!</p>
+					</div><!--end entry-->
+	<div class="post-footer">
+		<div class="comments"><a href="https://blog.acolyer.org/2016/12/19/so-that-was-2016/#comments">5 Comments</a></div>
+		<div class="categories">from &rarr; <a href="https://blog.acolyer.org/category/uncategorized/" rel="category tag">Uncategorized</a></div>
+	</div><!--end post footer-->
+</div><!--end post-->
+<div id="post-3338" class="post-3338 post type-post status-publish format-standard hentry category-uncategorized">
+	<div class="post-header">
+		<h2><a href="https://blog.acolyer.org/2016/12/16/tensorflow-a-system-for-large-scale-machine-learning/" rel="bookmark">TensorFlow: A system for large-scale machine&nbsp;learning</a></h2>
+		<div class="date">December 16, 2016</div>
+	</div><!--end post header-->
+	<div class="meta clear">
+		<div class="tags"></div>
+		<div class="author">
+					</div>
+	</div><!--end meta-->
+	<div class="entry clear">
+				<p><a href="https://www.usenix.org/system/files/conference/osdi16/osdi16-abadi.pdf">TensorFlow: A system for large-scale machine learning</a> Abadi et al. (Google Brain) <em>OSDI 2016</em></p>
+<p>This is my last paper review for 2016! The Morning Paper will be taking a two week break for the holidays, resuming again on the 2nd January. Sometime inbetween I’ll do a short retrospective on the year. It seems fitting to finish the year with a software system that was released as OSS just over a year ago and has since gathered a lot of mindshare and attention: Google’s TensorFlow.</p>
+<blockquote><p>
+A large number of groups at Google have deployed TensorFlow in production, and TensorFlow is helping our research colleagues to make new new advances in machine learning. Since we released TensorFlow as open-source software, more than 14,000 people have forked the source code repository, the binary distribution has been downloaded over one million times, and dozens of machine learning models that use TensorFlow have been published.
+</p></blockquote>
+<h3 id="tensorflow-essentials">TensorFlow essentials</h3>
+<p>A <em>tensor</em> is simply a multi-dimensional array of primitive types. A machine learning system in TensorFlow is represented by a dataflow graph with operators and state at the nodes in the graph, and tensors flowing on the edges between them.</p>
+<div class="figure">
+<img src="https://adriancolyer.files.wordpress.com/2016/12/tensorflow-fig-2.png?w=600" /></p>
+</div>
+<p>This explicit representation of the computation and the communication between stages makes it easy to partition computation across devices, and to execute independent computations in parallel.</p>
+<p>At the system level, all tensors are treated as dense. If you want to model a <em>sparse</em> tensor therefore, you need to encode it somehow at the application level. One option is to encode the data into variable-length string elements in a dense tensor; another option is to use a tuple of dense tensors, the first carrying coordinates, and the second the (non-zero) values at those coordinates.</p>
+<p>Operations take one or more tensors as input and produce one or more tensors as output. The attributes of an operation at compile-time determine both the expected types and the arity of inputs and outputs. Operations may contain mutable state that is read and/or written each time it executes. The special <code>Variable</code> operation simply owns a mutable buffer that may be used to store the shared parameters of a model as it is trained. In this way, parameters may be contained within the dataflow itself, rather than being ‘outside’ of the system in a parameter server.</p>
+<p>A second type of stateful operator is a <em>queue</em> operator. Queues support more advanced forms of coordination.</p>
+<blockquote><p>
+The simplest queue is <code>FIFOQueue</code>, which owns an internal queue of tensors, and allows concurrent access in first-in first-out order. Other types of queues dequeue tensors in random and priority orders, which ensure that input data are sampled appropriately.
+</p></blockquote>
+<p>Advanced machine learning algorithms may contain conditional and iterative control flow (e.g., RNNs). Given that expressing everything in the dataflow graph is a fundamental tenet of TensorFlow, this control flow also needs to be expressed in the graph. TensorFlow borrows <code>Switch</code> and <code>Merge</code> operations from traditional dynamic dataflow architectures to implement conditionals. <code>Enter</code>, <code>Exit</code>, and <code>Next Iteration</code> operators are used to support looping.</p>
+<blockquote><p>
+The execution of iterations can overlap, and TensorFlow can also partition conditional branches and loop bodies across multiple devices and processes. The partitioning step adds logic to coordinate the start and termination of each iteration on each device, and to decide the termination of the loop.
+</p></blockquote>
+<p>It’s the job of the TensorFlow runtime to place operations on devices within <em>task</em> processes. TensorFlow supports CPUs, GPUs, and Google’s own custom ASIC TPUs &#8211; Tensor Processing Units. TPUs give an order of magnitude improvement in performance-per-watt compared to the alternative state-of-the-art.</p>
+<blockquote><p>
+The placement algorithm computes a feasible set of devices for each operation, calculates the set of operations that must be colocated, and selects a satisfying device for each colocation group.
+</p></blockquote>
+<p>An operation may have multiple <em>kernels</em> registered for it, with specialized implementations for particular devices or data types.</p>
+<p>When submitting a graph to the TensorFlow runtime, the user can specify zero or more edges to feed input tensors into the dataflow, and one or more edges to fetch output tensors from. The <em>distributed master</em> prunes the graph to support just what is needed for the given inputs and outputs, partitions it into subgraphs for each participating device, and caches them for reuse in subsequent steps.</p>
+<blockquote><p>
+Since the master sees the overall computation for a step, it applies standard optimizations such as common subexpression elimination and constant folding; pruning is a form of dead code elimination. It then coordinates execution of the optimized subgraphs across a set of tasks.
+</p></blockquote>
+<p>For transfers between task processes, TensorFlow can take advantage of multiple protocols including gRPC over TCP, and RDMA over converged Ethernet (RoCE).</p>
+<p>TensorFlow differs from standard batch dataflow systems in that:</p>
+<ul>
+<li>the model supports multiple concurrent executions on overlapping subgraphs of the overall graph</li>
+<li>Individual vertices may have mutable state that can be shared between different executions of the graph</li>
+</ul>
+<p><a href="https://blog.acolyer.org/2015/06/12/naiad-a-timely-dataflow-system/">Naiad</a> with its <a href="https://blog.acolyer.org/2015/06/17/differential-dataflow/">Differential dataflow</a> support seems to come close to many of the general dataflow requirements of TensorFlow (without having the specialized operators etc. for ML).</p>
+<p>Since <a href="http://www.allthingsdistributed.com/2016/11/mxnet-default-framework-deep-learning-aws.html">Amazon have just blessed MXNet as their deep learning system of choice</a>, it’s interesting to see what the TensorFlow authors have to say about it:</p>
+<blockquote><p>
+MXNet is perhaps the closest system in design to TensorFlow. It uses a dataflow graph to represent the computation at each worker, and uses a parameter server to scale training across multiple machines. The MXNet parameter server exports a key-value store interface that supports aggregating updates sent from multiple devices in each worker, and using an arbitrary user-provided function to combine incoming updates with the current value. The MXNet key-value store interface does not currently allow sparse gradient updates within a single value, which are crucial for the distributed training of large models, and adding this feature would require modifications to the core system.
+</p></blockquote>
+<h3 id="history-and-design-rationale">History and design rationale</h3>
+<p>TensorFlow is a successor to a previous Google system called DistBelief which used a parameter server architecture. One of its key goals was to provide much more flexibility to users and hence support rapid experimentation with new algorithms etc..</p>
+<p>Making everything part of a dataflow makes it easier for users to compose novel layers using just a high-level scripting interface. Having state in the dataflow graph enables experimentation with different update rules.</p>
+<p>Having global information about the computation enables optimization of the execution phase &#8211; for example, TensorFlow achieves high GPU utilization by using the graph’s dependency structure to issue a sequence of kernels to the GPU without waiting for intermediate results.</p>
+<p>Allowing operations to have multiple kernels enables exploitation of special-purpose accelerators when they are available. This enable a TensorFlow program, for example, to be deployed to a cluster of GPUs for training, a cluster of TPUs for serving, and a cellphone for mobile inference.</p>
+<h3 id="where-next">Where next?</h3>
+<blockquote><p>
+TensorFlow is a work in progress. Its flexible dataflow representation enables power users to achieve excellent performance, but we have not yet determined default policies that work well for all users. Further research on automatic optimization should bridge this gap. On the system level, we are actively developing algorithms for automatic placement, kernel fusion, memory management, and scheduling.
+</p></blockquote>
+<p>Fault-tolerance today is supported by user-level checkpointing operations (<code>Save</code> and <code>Restore</code>). A typical configuration connects each <code>Variable</code> in a task to the same <code>Save</code> operation to maximize I/O bandwidth to a distributed file system.</p>
+<blockquote><p>
+While the current implementations of mutable state and fault tolerance suffice for applications with weak consistency requirements, we expect that some TensorFlow applications will require stronger consistency, and we are investigating how to build such policies at user-level.
+</p></blockquote>
+<p>TensorFlow was originally designed to support <a href="https://blog.acolyer.org/2015/11/26/asip/">asynchronous training</a>, but new research suggests in some configurations synchnronous training may be faster to get to a certain quality level than asynchronous training, thus the team have begun experimenting with synchronous methods.</p>
+<blockquote><p>
+Finally, some users have begun to chafe at the limitations of a static dataflow graph, especially for algorithms like deep reinforcement learning. Therefore, we face the intriguing problem of providing a system that transparently and efficiently uses distributed resources, even when the structure of the computation unfolds dynamically.
+</p></blockquote>
+					</div><!--end entry-->
+	<div class="post-footer">
+		<div class="comments"><a href="https://blog.acolyer.org/2016/12/16/tensorflow-a-system-for-large-scale-machine-learning/#comments">2 Comments</a></div>
+		<div class="categories">from &rarr; <a href="https://blog.acolyer.org/category/uncategorized/" rel="category tag">Uncategorized</a></div>
+	</div><!--end post footer-->
+</div><!--end post-->
+<div id="post-3335" class="post-3335 post type-post status-publish format-standard hentry category-uncategorized">
+	<div class="post-header">
+		<h2><a href="https://blog.acolyer.org/2016/12/15/fasst-fast-scalable-and-simple-distributed-transactions-with-two-sided-rdma-datagram-rpcs/" rel="bookmark">FaSST: Fast, scalable and simple distributed transactions with two-sided (RDMA) datagram&nbsp;RPCs</a></h2>
+		<div class="date">December 15, 2016</div>
+	</div><!--end post header-->
+	<div class="meta clear">
+		<div class="tags"></div>
+		<div class="author">
+					</div>
+	</div><!--end meta-->
+	<div class="entry clear">
+				<p><a href="https://www.usenix.org/system/files/conference/osdi16/osdi16-kalia.pdf">FaSST: Fast, scalable and simple distributed transactions with two-sided (RDMA) datagram rpcs</a> Kalia et al., <em>OSDI 2016</em></p>
+<p>Back in January I wrote a short piece entitled ‘<a href="https://blog.acolyer.org/2016/01/22/all-change-please/">All change please</a>’ looking at some of the hardware changes making their way to our datacenters and the implications. One of those changes is super-fast networking (as exploited by e.g., the <a href="https://blog.acolyer.org/2016/12/08/just-say-no-to-paxos-overhead-replacing-consensus-with-network-ordering/">NOPaxos</a> paper we looked at last week). As we approach the end of the year, it seems fitting to revisit that topic with FaSST…</p>
+<blockquote><p>
+… recent systems have shown that transactions can be fast in the datacenter. The key enablers are high-speed networks and lightweight network stacks (i.e., kernel bypass). In addition these systems exploit Remote Direct Memory Access (RDMA) for its low latency and CPU efficiency.
+</p></blockquote>
+<p>As the saying goes, “there are two sides to every argument.” But there aren’t two sides to every RDMA call, as RDMA also offers a super-fast ‘one-sided’ call which completely bypasses the remote CPU. RDMA actually offers three different modes of communication:</p>
+<ol style="list-style-type:decimal;">
+<li>One-sided RDMA (CPU bypass) which provides read, write, and two atomic operations fetch_and_add, and compare_and_swap.</li>
+<li>An MPI interface with SEND/RECV verbs, and</li>
+<li>An IP emulation mode that enables socket-based code to be used unmodified</li>
+</ol>
+<p>Some of the systems that blew my mind in this space include <a href="https://blog.acolyer.org/2015/05/20/farm-fast-remote-memory/">FaRM</a>, <a href="https://blog.acolyer.org/2015/10/26/fast-in-memory-transaction-processing-using-rdma-and-rtm/">DrTM</a>, and <a href="https://blog.acolyer.org/2016/01/18/ramcloud/">RAMCloud</a>. FaRM and DrTM both use <em>one-sided</em> RDMA in an attempt to go as fast as possible. RAMCloud is tuned for ultra-low latency (not throughput) and actually doesn’t use one-sided RDMA, instead preferring RPC style communication which in their benchmarks came out better when multiple one-sided calls would otherwise be needed.</p>
+<blockquote><p>
+FaSST targets high-speed, low-latency key-value transaction processing with throughputs of several million transactions/sec and average latencies around one hundred microseconds on common OLTP benchmarks with short transactions with up to a few tens of keys. Achieving this performance requires in-memory transaction processing, and fast userspace network I/O with polling (i.e., the overhead of a kernel network stack or interrupts is unacceptable). We assume commercially available network equipment: 10-100Gbps of per-port bandwidth and approx. 2 μs end-to-end latency.
+</p></blockquote>
+<p>FaSST turns out to be well named! Compared to FaRM, it achieved 3.55M tps per machine in a 50-node cluster on an OLTP benchmark (TATP), whereas FaRM ‘only’ achieves 1.9M tps in the same setting. (And on a more powerful cluster, FaSST achieved 8.7Mtps/machine!). On the Smallbank OLTP benchmark DrTM achieves 0.93M tps/machine, FaSST outperforms it by over 1.68x on an equivalent cluster, and by over 4.5x on a more powerful cluster.</p>
+<div class="figure">
+<img src="https://adriancolyer.files.wordpress.com/2016/12/fasst-table-3.png?w=600" /></p>
+</div>
+<p>The FaSST experiments were conducted on two different clusters. The ‘CX3’ cluster has Intel SandyBridge CPUs with 8 cores and ConnectX-3 NICs, configurations up to 69 nodes were used in the experiments. The ‘CIB’ cluster has 11 nodes with a more powerful Connect-IB NIC with 2x more bandwidth and around 4x higher message rate. This cluster also uses more powerful 14-core Intel Haswell CPUs.</p>
+<p>Say you wanted to do 100M tps, you can get there with just over 11 nodes in CIB.</p>
+<div class="figure">
+<img src="https://adriancolyer.files.wordpress.com/2016/12/fasst-fig-8.png?w=600" /></p>
+</div>
+<p>What’s the secret to FaSST’s great performance? <em>Not</em> using one-sided RDMA! The authors show that even though one-sided RDMA looks like the theoretically fastest option, when matched to the needs of transactional applications it’s not such a good fit, and an RPC-based approach can fare better.</p>
+<blockquote><p>
+A key contribution of this work is FaSST RPCs: an all-to-all RPC system that is facts, scalable, and CPU-efficient. This is made possible by using RDMA’s datagram transport that provides scalability, and allows “Doorbell batching” which saves CPU cycles by reducing CPU-initiated PCIe bus transactions. We show that FaSST RPCs provide (1) up to 8x higher throughput, and 13.9x high CPU efficiency than FaRM’s RPCs, and (2) 1.7-2.15x higher CPU efficiency, or higher throughput, than one-sided READs, dependent on whether or not the READs scale to clusters with more than a few tens of nodes.
+</p></blockquote>
+<p>FaSST itself is a (prototype) transaction processing system built on top of FaSST RPCs. Its design is largely inspired by <a href="https://blog.acolyer.org/2015/05/20/farm-fast-remote-memory/">FaRM</a>, so I’m going to concentrate on the FaSST RPC mechanism itself in this write-up.</p>
+<h3 id="rdma-background">RDMA background</h3>
+<p>Current commodity RDMA implementations (e.g., Infiniband, RoCE, iWarp) use the Virtual Interface Architecture (VIA). VIA is connection-oriented, requiring a connection to be made between a pair of virtual interfaces before they are allowed to communicate. A virtual interface is represented by a queue pair (QP) consisting of a send queue and a receive queue. SEND and RECV are two-sided verbs and require the involvement of the CPU at both ends. READ, WRITE, and ATOMIC are one-side verbs and bypass the remote CPU to operate directly on remote memory.</p>
+<blockquote><p>
+RDMA transports can be connected or connectionless. Connected transports offer one-to-one communication between two queue pairs: to communicate with N remote machines, a thread must create N QPs. These transports provide one-sided RDMA and end-to-end reliability, but do not scale well to large clusters. This is because NICs have limited memory to cache QP state, and exceeding the size of this state by using too many QPs causes cache thrashing. Connectionless (datagram) transports are extensions to the connection-oriented VIA, and support fewer features than connected transports: they do not provide one-sided RDMA or end-to-end reliability. However, they allow a QP to communicate with multiple other QPs, and have better scalability than connected transports as only one QP is needed per thread.
+</p></blockquote>
+<p>Current RDMA implementations offer three main transports: reliable connected (RC), unreliable connected (UC), and unreliable datagram (UD). Only connected transports provided one-sided verbs.</p>
+<div class="figure">
+<img src="https://adriancolyer.files.wordpress.com/2016/12/fasst-table-1.png?w=600" /></p>
+</div>
+<h3 id="the-tortoise-and-the-hare">The tortoise and the hare</h3>
+<p>How a slower communication primitive ends up being faster…</p>
+<p>RPCs use more CPU and are slower than one-sided RDMA operations, yet it turns out that in the context of an overall system they can be faster, simpler, and more scalable.</p>
+<p>Let’s talk about speed and simplicity first, and then come back to scalability.</p>
+<blockquote><p>
+Although READs can outperform similarly-sized RPCs on small clusters, RPCs perform better when accounting for the amplification in size or number of READs required to access real data stores.
+</p></blockquote>
+<p>The point is, it can be hard to do everything you need in a transactional system with a single READ, but once you get beyond a small number of READS, an RPC mechanism can be quicker (the RAMCloud team reached the same conclusion).</p>
+<blockquote><p>
+RPCs allow access to partitioned data stores with two messages: the request and the reply. They do not require message size amplification, multiple round trips, or caching. The simplicity of RPC-based programming reduces the software complexity required to take advantage of modern fast networks in transaction processing: to implement a partitioned, distributed data store, the user writes only short RPC handlers for a single-node data store…
+</p></blockquote>
+<p>The scalability advantage comes from limits in the NIC’s queue pair cache. The ideal is that a core has exclusive access to a QP (the overhead of sharing can dramatically reduce the per-core throughput, e.g., by 5.4x in experiments conducted by the authors). With a <em>connected</em> transport, <em>N</em> machines, and <em>T</em> threads at each machine we’d need <em>N*T</em> queue pairs at every machine to guarantee exclusive access, which quickly grows to be too many for the NIC. But using the datagram transport it is possible to create <em>one</em> datagram QP that can communicate with <em>all</em> remote cores.</p>
+<p>Once you’ve chosen to use RPCs, datagrams offer a second advantage over connected transports in that you can implement <em>Doorbell batching</em> to reduce CPU use:</p>
+<blockquote><p>
+User processes post operations to the NIC by writing to a per-QP Doorbell register on the NIC over the PCIe bus, specifying the number of new operations on that QP. This write is relatively expensive for the CPU because it requires flushing the write buffers, and using memory barriers for ordering….
+</p></blockquote>
+<p>Using datagram QPs, it is possible to batch requests and ring the doorbell only once, regardless of the individual message destinations within the batch. With connected QPs the process must ring one doorbell for every destination.</p>
+<h3 id="fasst-rpcs">FaSST RPCs</h3>
+<blockquote><p>
+FaSST’s RPCs are designed for transaction workloads that use small (~100 byte) objects and a few tens of keys.
+</p></blockquote>
+<p>Since RDMA network latency is on the order of 10µs under load (much higher than the time spent in computation) FaSST uses coroutines to hide network latency. About 20 coroutines per thread turns out to be sufficient. Each thread is responsible for one RPC endpoint, which is serviced by the coroutine pool. One ‘master’ coroutine polls the network to identify newly arrived request and response packets, it then buffers response packets for ‘worker’ coroutines until all needed responses are available and then invokes the worker.</p>
+<p>Workers operate on batches of <em>b ≥ 1</em> requests. Requests are initially created without performaning any network I/O, and then an RPC function is invoked to send them.</p>
+<blockquote><p>
+Operating on batches of requests has several advantages. First, it reduces the number of NIC Doorbells the CPU must ring from b to 1, saving CPU cycles. Second, it allows the RPC layer to coalesce messages sent to the same destination machine.
+</p></blockquote>
+<p>FaSST also uses response batching, assembling a batch of <em>B</em> response packets and then sending them with one doorbell ring. Batching is opportunistic, the master does not <em>wait</em> for a batch of packets to accumulate before sending responses to avoid latency.</p>
+<p>A circular buffer of RECV queue descriptors allows re-use without needing to create new descriptors and update a queue each time. Packet loss is detected by the master coroutine, which keeps a response counter for each worker.</p>
+<blockquote><p>
+If a packet is lost, the master never receives all responses for the worker; it never invokes the worker again, preventing it from issuing new requests and receiving more responses.
+</p></blockquote>
+<p>After <em>timeout</em> seconds the master kills the entire FaSST process on its machine. That sounds pretty draconian, and as the authors admit, “restarting a process on packet loss requires packet losses to be extremely rare.” And with this kind of network it turns out that indeed they are:</p>
+<ul>
+<li>A 46 hour stress test sending over 100 trillion RPC packets did not lose a single packet!</li>
+<li>Over about 50PB of data transfer (across several experiments) not a single packet was lost.</li>
+<li>Some packets are <em>reordered</em> though &#8211; about 1500 packets out of 100 trillion.</li>
+</ul>
+					</div><!--end entry-->
+	<div class="post-footer">
+		<div class="comments"><a href="https://blog.acolyer.org/2016/12/15/fasst-fast-scalable-and-simple-distributed-transactions-with-two-sided-rdma-datagram-rpcs/#comments">1 Comment</a></div>
+		<div class="categories">from &rarr; <a href="https://blog.acolyer.org/category/uncategorized/" rel="category tag">Uncategorized</a></div>
+	</div><!--end post footer-->
+</div><!--end post-->				<div class="navigation index">
+			<div class="alignleft"><a href="https://blog.acolyer.org/page/16/" >&laquo; Older Entries</a></div>
+			<div class="alignright"><a href="https://blog.acolyer.org/page/14/" >Newer Entries &raquo;</a></div>
+		</div><!--end navigation-->
+			</div><!--end content-->
+	<div id="sidebar">
+																		<ul class="thin-sidebar">			<li id="text-4" class="widget widget_text"><h2 class="widgettitle">Subscribe </h2>			<div class="textwidget"><div align="center">
+<a href="http://eepurl.com/bbzPm9"><img src="https://adriancolyer.files.wordpress.com/2015/01/mail-new-icon.png?w=600"></a>
+<br />never miss an issue! The Morning Paper delivered straight to your inbox.
+</div></div>
+		</li><li id="search-3" class="widget widget_search"><h2 class="widgettitle">Search</h2><form method="get" id="search_form" action="https://blog.acolyer.org/">
+	<div>
+		<input type="text" value="type and press enter" name="s" id="s" onfocus="if (this.value == 'type and press enter') {this.value = '';}" onblur="if (this.value == '') {this.value = 'type and press enter';}" />
+		<input type="hidden" value="Search" />
+	</div>
+</form></li><li id="archives-3" class="widget widget_archive"><h2 class="widgettitle">Archives</h2>		<label class="screen-reader-text" for="archives-dropdown-3">Archives</label>
+		<select id="archives-dropdown-3" name="archive-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'>
+
+			<option value="">Select Month</option>
+				<option value='https://blog.acolyer.org/2017/05/'> May 2017 &nbsp;(21)</option>
+	<option value='https://blog.acolyer.org/2017/04/'> April 2017 &nbsp;(11)</option>
+	<option value='https://blog.acolyer.org/2017/03/'> March 2017 &nbsp;(23)</option>
+	<option value='https://blog.acolyer.org/2017/02/'> February 2017 &nbsp;(21)</option>
+	<option value='https://blog.acolyer.org/2017/01/'> January 2017 &nbsp;(25)</option>
+	<option value='https://blog.acolyer.org/2016/12/'> December 2016 &nbsp;(14)</option>
+	<option value='https://blog.acolyer.org/2016/11/'> November 2016 &nbsp;(22)</option>
+	<option value='https://blog.acolyer.org/2016/10/'> October 2016 &nbsp;(21)</option>
+	<option value='https://blog.acolyer.org/2016/09/'> September 2016 &nbsp;(20)</option>
+	<option value='https://blog.acolyer.org/2016/07/'> July 2016 &nbsp;(16)</option>
+	<option value='https://blog.acolyer.org/2016/06/'> June 2016 &nbsp;(22)</option>
+	<option value='https://blog.acolyer.org/2016/05/'> May 2016 &nbsp;(22)</option>
+	<option value='https://blog.acolyer.org/2016/04/'> April 2016 &nbsp;(12)</option>
+	<option value='https://blog.acolyer.org/2016/03/'> March 2016 &nbsp;(23)</option>
+	<option value='https://blog.acolyer.org/2016/02/'> February 2016 &nbsp;(21)</option>
+	<option value='https://blog.acolyer.org/2016/01/'> January 2016 &nbsp;(23)</option>
+	<option value='https://blog.acolyer.org/2015/12/'> December 2015 &nbsp;(10)</option>
+	<option value='https://blog.acolyer.org/2015/11/'> November 2015 &nbsp;(21)</option>
+	<option value='https://blog.acolyer.org/2015/10/'> October 2015 &nbsp;(22)</option>
+	<option value='https://blog.acolyer.org/2015/09/'> September 2015 &nbsp;(22)</option>
+	<option value='https://blog.acolyer.org/2015/08/'> August 2015 &nbsp;(22)</option>
+	<option value='https://blog.acolyer.org/2015/06/'> June 2015 &nbsp;(21)</option>
+	<option value='https://blog.acolyer.org/2015/05/'> May 2015 &nbsp;(21)</option>
+	<option value='https://blog.acolyer.org/2015/04/'> April 2015 &nbsp;(14)</option>
+	<option value='https://blog.acolyer.org/2015/03/'> March 2015 &nbsp;(23)</option>
+	<option value='https://blog.acolyer.org/2015/02/'> February 2015 &nbsp;(23)</option>
+	<option value='https://blog.acolyer.org/2015/01/'> January 2015 &nbsp;(21)</option>
+	<option value='https://blog.acolyer.org/2014/12/'> December 2014 &nbsp;(15)</option>
+	<option value='https://blog.acolyer.org/2014/11/'> November 2014 &nbsp;(20)</option>
+	<option value='https://blog.acolyer.org/2014/10/'> October 2014 &nbsp;(20)</option>
+	<option value='https://blog.acolyer.org/2011/05/'> May 2011 &nbsp;(3)</option>
+
+		</select>
+		</li><li id="top-posts-3" class="widget widget_top-posts"><h2 class="widgettitle">Most read in the last few days</h2><ul>				<li>
+										<a href="https://blog.acolyer.org/2017/05/29/an-empirical-study-on-the-correctness-of-formally-verified-distributed-systems/" class="bump-view" data-bump-view="tp">
+						An empirical study on the correctness of formally verified distributed systems					</a>
+									</li>
+							<li>
+										<a href="https://blog.acolyer.org/2017/05/11/understanding-deep-learning-requires-re-thinking-generalization/" class="bump-view" data-bump-view="tp">
+						Understanding deep learning requires re-thinking generalization					</a>
+									</li>
+							<li>
+										<a href="https://blog.acolyer.org/2016/04/21/the-amazing-power-of-word-vectors/" class="bump-view" data-bump-view="tp">
+						The amazing power of word vectors					</a>
+									</li>
+							<li>
+										<a href="https://blog.acolyer.org/2017/05/24/bolt-i-know-what-you-did-last-summer-in-the-cloud/" class="bump-view" data-bump-view="tp">
+						Bolt: I know what you did last summer... in the cloud					</a>
+									</li>
+							<li>
+										<a href="https://blog.acolyer.org/2017/05/22/typed-architectures-architectural-support-for-lightweight-scripting/" class="bump-view" data-bump-view="tp">
+						Typed Architectures: architectural support for lightweight scripting					</a>
+									</li>
+							<li>
+										<a href="https://blog.acolyer.org/2017/05/26/apps-with-hardware-enabling-run-time-architectural-customization-in-smart-phones/" class="bump-view" data-bump-view="tp">
+						Apps with hardware: enabling run-time architectural customization in smart phones					</a>
+									</li>
+							<li>
+										<a href="https://blog.acolyer.org/2017/05/25/neurosurgeon-collaborative-intelligence-between-the-cloud-and-the-mobile-edge/" class="bump-view" data-bump-view="tp">
+						Neurosurgeon: collaborative intelligence between the cloud and the mobile edge					</a>
+									</li>
+							<li>
+										<a href="https://blog.acolyer.org/2017/05/19/who-controls-the-internet-analyzing-global-threats-using-property-traversal-graphs/" class="bump-view" data-bump-view="tp">
+						Who controls the Internet? Analyzing global threats using property traversal graphs					</a>
+									</li>
+							<li>
+										<a href="https://blog.acolyer.org/2017/05/12/learning-to-act-by-predicting-the-future/" class="bump-view" data-bump-view="tp">
+						Learning to act by predicting the future					</a>
+									</li>
+							<li>
+										<a href="https://blog.acolyer.org/2014/11/24/use-of-formal-methods-at-amazon-web-services/" class="bump-view" data-bump-view="tp">
+						Use of Formal Methods at Amazon Web Services					</a>
+									</li>
+			</ul></li><li id="rss_links-3" class="widget widget_rss_links"><h2 class="widgettitle">RSS</h2><ul><li><a href="https://blog.acolyer.org/feed/" title="Subscribe to Posts">RSS - Posts</a></li><li><a href="https://blog.acolyer.org/comments/feed/" title="Subscribe to Comments">RSS - Comments</a></li></ul>
+</li><li id="twitter_timeline-3" class="widget widget_twitter_timeline"><h2 class="widgettitle">Live on twitter</h2><a class="twitter-timeline" data-width="225" data-height="400" data-theme="light" data-link-color="#f96e5b" data-border-color="#e8e8e8" data-tweet-limit="10" data-lang="EN" data-partner="jetpack" data-widget-id="519408925733425153">My Tweets</a></li>		</ul>	</div><!--end sidebar-->	<div id="footer">
+		<div class="footer-liner">
+			<p class="right"><a href="https://wordpress.com/?ref=footer_blog">Blog at WordPress.com.</a></p>
+			<p></p>
+		</div><!-- .footer-liner -->
+	</div><!--end footer-->
+</div><!--end wrapper-->
+		<script type="text/javascript">
+		//<![CDATA[
+		var infiniteScroll = {"settings":{"id":"content","ajaxurl":"https:\/\/blog.acolyer.org\/?infinity=scrolling","type":"scroll","wrapper":true,"wrapper_class":"infinite-wrap","footer":true,"click_handle":"1","text":"Older posts","totop":"Scroll back to top","currentday":"15.12.16","order":"DESC","scripts":[],"styles":[],"google_analytics":false,"offset":15,"history":{"host":"blog.acolyer.org","path":"\/page\/%d\/","use_trailing_slashes":true,"parameters":""},"query_args":{"paged":15,"error":"","m":"","p":0,"post_parent":"","subpost":"","subpost_id":"","attachment":"","attachment_id":0,"name":"","static":"","pagename":"","page_id":0,"second":"","minute":"","hour":"","day":0,"monthnum":0,"year":0,"w":0,"category_name":"","tag":"","cat":"","tag_id":"","author":"","author_name":"","feed":"","tb":"","meta_key":"","meta_value":"","preview":"","s":"","sentence":"","title":"","fields":"","menu_order":"","embed":"","category__in":[],"category__not_in":[],"category__and":[],"post__in":[],"post__not_in":[],"post_name__in":[],"tag__in":[],"tag__not_in":[],"tag__and":[],"tag_slug__in":[],"tag_slug__and":[],"post_parent__in":[],"post_parent__not_in":[],"author__in":[],"author__not_in":[],"posts_per_page":7,"ignore_sticky_posts":false,"suppress_filters":false,"cache_results":false,"update_post_term_cache":true,"lazy_load_term_meta":true,"update_post_meta_cache":true,"post_type":"","nopaging":false,"comments_per_page":"50","no_found_rows":false,"order":"DESC"},"last_post_date":"2016-12-15 06:00:35","stats":"blog=23592848&v=wpcom&tz=1&user_id=0&subd=adriancolyer&x_pagetype=infinite"}};
+		//]]>
+		</script>
+		<!--  -->
+<script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201722y'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s1.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781h'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	</div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"https:\/\/adriancolyer.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"https:\/\/adriancolyer.wordpress.com\/wp-login.php?action=logout&_wpnonce=37aecf2862","homeURL":"https:\/\/blog.acolyer.org\/","postID":"3417","gravDefault":"identicon","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"","userIsLoggedIn":"","isJetpack":"0","text_direction":"ltr"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??/wp-content/js/jquery/jquery.autoresize.js,/wp-content/mu-plugins/highlander-comments/script.js?m=1479964158j'></script>
+		<div id="infinite-footer">
+			<div class="container">
+				<div class="blog-info">
+					<a id="infinity-blog-title" href="https://blog.acolyer.org/" rel="home">
+						the morning paper					</a>
+				</div>
+				<div class="blog-credits">
+					<a href="https://wordpress.com/?ref=footer_blog">Blog at WordPress.com.</a> 				</div>
+			</div>
+		</div><!-- #infinite-footer -->
+
+	<div id="carousel-reblog-box">
+		<form action="#" name="carousel-reblog">
+			<textarea id="carousel-reblog-content" name="carousel-reblog-content" placeholder="Add your thoughts here... (optional)"></textarea>
+			<label for="carousel-reblog-to-blog-id" id="carousel-reblog-lblogid">Post to</label>
+			<select name="carousel-reblog-to-blog-id" id="carousel-reblog-to-blog-id">
+						</select>
+
+			<div class="submit">
+				<span class="canceltext"><a href="#" class="cancel">Cancel</a></span>
+				<input type="submit" name="carousel-reblog-submit" class="button" id="carousel-reblog-submit" value="Reblog Post" />
+				<input type="hidden" id="carousel-reblog-blog-id" value="23592848" />
+				<input type="hidden" id="carousel-reblog-blog-url" value="https://blog.acolyer.org" />
+				<input type="hidden" id="carousel-reblog-blog-title" value="the morning paper" />
+				<input type="hidden" id="carousel-reblog-post-url" value="" />
+				<input type="hidden" id="carousel-reblog-post-title" value="" />
+			</div>
+
+			<input type="hidden" id="_wpnonce" name="_wpnonce" value="c6e30e64bb" /><input type="hidden" name="_wp_http_referer" value="/page/15/" />		</form>
+
+		<div class="arrow"></div>
+	</div>
+<link rel='stylesheet' id='all-css-0-3' href='https://s1.wp.com/wp-content/mu-plugins/carousel/jetpack-carousel.css?m=1481571546h' type='text/css' media='all' />
+<!--[if lte IE 8]>
+<link rel='stylesheet' id='jetpack-carousel-ie8fix-css'  href='https://s1.wp.com/wp-content/mu-plugins/carousel/jetpack-carousel-ie8fix.css?m=1412618825h&#038;ver=20121024' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='all-css-2-3' href='https://s1.wp.com/wp-content/mu-plugins/tiled-gallery/tiled-gallery.css?m=1443731146h' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var actionbardata = {"siteID":"23592848","siteName":"the morning paper","siteURL":"https:\/\/blog.acolyer.org","icon":"<img alt='' src='https:\/\/secure.gravatar.com\/blavatar\/09326a066a08237015d6b84f026d36ae?s=50&d=https%3A%2F%2Fs1.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png' class='avatar avatar-50' height='50' width='50' \/>","canManageOptions":"","canCustomizeSite":"","isFollowing":"","themeSlug":"pub\/vigilance","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/adriancolyer.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fblog.acolyer.org%2F2017%2F01%2F03%2Fmatching-networks-for-one-shot-learning%2F","themeURL":"","xhrURL":"https:\/\/blog.acolyer.org\/wp-admin\/admin-ajax.php","nonce":"eeb3c55d65","isSingular":"","isFolded":"","isLoggedIn":"","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"980117aeb2\" \/>","referer":"https:\/\/blog.acolyer.org\/page\/15\/","canFollow":"1","statusMessage":"","customizeLink":"https:\/\/adriancolyer.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Fadriancolyer.wordpress.com%2Fpage%2F15%2F","i18n":{"view":"View site","follow":"Follow","following":"Following","edit":"Edit","login":"Log in","signup":"Sign up","customize":"Customize","report":"Report this content","themeInfo":"Get theme: Vigilance","shortlink":"Copy shortlink","copied":"Copied","followedText":"New posts from this site will now appear in your <a href=\"https:\/\/wordpress.com\/\">Reader<\/a>","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","editSubs":"Manage subscriptions","viewReader":"View site in the Reader","subscribe":"Sign me up","enterEmail":"Enter your email address","followers":"Join 1,081 other followers","alreadyUser":"Already have a WordPress.com account? <a href=\"https:\/\/adriancolyer.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fblog.acolyer.org%2F2017%2F01%2F03%2Fmatching-networks-for-one-shot-learning%2F\">Log in now.<\/a>","stats":"Stats"}};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"https:\/\/blog.acolyer.org\/wp-admin\/admin-ajax.php","nonce":"e7c298931d","display_exif":"1","display_geo":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","download_original":"View full size <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","comment_registration":"0","require_name_email":"1","login_url":"https:\/\/adriancolyer.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fblog.acolyer.org%2F2017%2F01%2F03%2Fmatching-networks-for-one-shot-learning%2F","blog_id":"23592848","local_comments_commenting_as":"<fieldset><label for=\"email\">Email (Required)<\/label> <input type=\"text\" name=\"email\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-email-field\" \/><\/fieldset><fieldset><label for=\"author\">Name (Required)<\/label> <input type=\"text\" name=\"author\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-author-field\" \/><\/fieldset><fieldset><label for=\"url\">Website<\/label> <input type=\"text\" name=\"url\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-url-field\" \/><\/fieldset>","reblog":"Reblog","reblogged":"Reblogged","reblog_add_thoughts":"Add your thoughts here... (optional)","reblogging":"Reblogging...","post_reblog":"Post Reblog","stats_query_args":"blog=23592848&v=wpcom&tz=1&user_id=0&subd=adriancolyer","is_public":"1","reblog_enabled":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s0.wp.com/_static/??-eJx9kMFuAjEMRH+IYECIikPVT0HZrGkdEifEzm779wSkXVUcchs78yYjw5yNS6zICl5gxIkc5t+tlw38e4rV5FC/iQUC3VDgXrHij+UxYOmYia/EpH+r6Hg9arbuBhdiBzqTKhajFDEQY4ezYyQ2gy0QrTSmKZMmLIXGVnTd9RKcUuJnwqo6bmdLqoJhKWyWxcK0/qE+/24HlfmaBo9O3wOXtKm1TGBFUF/Aa84FRRrxFT/3x/NhtzvtDx/+AWZJoR8='></script>
+<script type='text/javascript' src='https://platform.twitter.com/widgets.js?ver=20111117'></script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??-eJyVy8EOwiAMANAfslYTHXowfsuAhhRLJaxI/Hu97rTs+A4PR4XwViM1LB2q9MS6oA02owZe5vDy3CJUJlT6UCONrOmYlwPuuXX7sVCENItQ+671X8/yOF9u95Ob3NXlHw12Q+E='></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script type="text/javascript">
+			jQuery.extend( infiniteScroll.settings.scripts, ["jquery","jquery-core","jquery-migrate","mobile-useragent-info","postmessage","jquery_inview","jetpack_resize","spin","jquery.spin","grofiles-cards","wpgroho","jquery.autoresize","highlander-comments","devicepx","jetpack_likes_queuehandler","the-neverending-homepage","jetpack-twitter-timeline","wpcom-masterbar-js","wpcom-actionbar-bar","jetpack-carousel","swfobject","videopress","twitter-widgets","twitter-widgets-infinity","twitter-widgets-pending","tiled-gallery"] );
+			jQuery.extend( infiniteScroll.settings.styles, ["wpcom-smileys","jetpack_likes","the-neverending-homepage","infinity-vigilance","wpcom-core-compat-playlist-styles","mp6hacks","wpcom-bbpress2-staff-css","vigilance","jetpack-top-posts-widget","noticons","geo-location-flair","reblogging","a8c-global-print","wpcom-actionbar-bar","h4-global","highlander-comments","highlander-comments-ie7","jetpack-carousel","tiled-gallery","jetpack-carousel-ie8fix"] );
+		</script>		<script>
+			var _comscore = _comscore || [];
+			_comscore.push({
+				c1: "2",
+				c2: "7518284"
+			});
+			(function() {
+				var s = document.createElement("script"),
+					el = document.getElementsByTagName("script")[0];
+				s.defer = true;
+				s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+				el.parentNode.insertBefore(s, el);
+			})();
+		</script>
+		<noscript>
+			<p class="robots-nocontent"><img src="https://sb.scorecardresearch.com/p?c1=2&c2=7518284&c3=&c4=&c5=&c6=&c15=&cv=2.0&cj=1" alt="" style="display:none;" width="1" height="1" /></p>
+		</noscript><script src="//stats.wp.com/w.js?56" type="text/javascript" async defer></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'23592848','blog_tz':'1','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'23592848','v':'wpcom','tz':'1','user_id':'0','subd':'adriancolyer'}]);
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1LVmwrVi5vQS5fVFtfdHBbPyw1VXIrU3hWLHhmcmw0bWUwNiVnR3N1V2dDZTM4MGFxVndRQl1HNkJtOEQ0dVBbbk9jP2g4T29lWFFNTj0wRDY/M3V6LWF6cTFbcC0ubzArW0NVMWhMW2h4ci18N0E4T1BdZUdHQ0wveGREazlzc29KNWQxSEwyT3Y/ZmthaXJBMSZwajV3XXEydFNSeVczM3RpWX4waDZ1ZDNTVmRVRltid3F5Q2toMzYuUy18UEt5ZFQ9MVFHS2VLUnN4UCZdXW9xZVFtWjM2LCVWS0VnVi13L09pVltfOVFtM0ElQ082c013Q01HYi9ofm1raDNWLV1JSU54cjBbeWowVltkaXVSamF6SlV6VWpdXyVLdCwyUy5vUG5Ha1V4V2V+Z251TXFdb2JPNG95VThlLXE='}]);
+_stq.push([ 'clickTrackerInit', '23592848', '0' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+
+}
+</script></body>
+</html>
