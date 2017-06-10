@@ -34,12 +34,15 @@ The program generates a new chapter for each post. Internally, the program deleg
 
 ## Installing
 
+This project requires Python 2.7.
+
 ```
 $ git clone https://github.com/julien-sobczak/the-morning-paper-epub.git
 $ cd the-morning-paper-epub
 $ virtualenv env
 $ source env/bin/active
 $ pip install -r requirements.txt
+$ ./fix_pypub.sh
 ```
 
 
@@ -70,4 +73,9 @@ The epub sizes are small enough to be read like a book (~ 400 pages).
 
 The generated Epubs display property in *Calibre* viewer but only the first sentence of each chapter is displayed in *Adobe Digital Editions* and on my Kobo eReader.
 
-To fix this problem, a possible workaround is to convert the Epub to mobi using Calibre, before converting it back to Epub. The file converted using this process are also present under the `epubs` directory and are marked with "converted" in their filename.
+To fix this problem, a possible workaround is to force the regeneration of to Epub using Calibre. Calibre provides command-line utilities for various tasks including ebook conversion:
+
+```
+$ ebook-convert input.epub output.epub
+```
+
